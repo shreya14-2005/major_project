@@ -1,0 +1,28 @@
+PLANTHEALTHAI: MAIZE NUTRIENT DEFICIENCY MODEL COMPARISON REPORT
+=================================================================
+
+Evaluation Date: 2026-11-12T12:42:31+05:30
+Training Environment: Python 3.12, TensorFlow 2.18, CPU (GPU not detected)
+Dataset Split: 70% Train (323 images), 15% Validation (69 images), 15% Test (71 images held out)
+Class Balance Handling: Scikit-learn balanced class weights applied during training
+Evaluation Protocol: Comparison performed strictly on Validation Set; Test Set kept untouched.
+
+Validation Performance Comparison Table:
+-----------------------------------------------------------------
+Metric                       MobileNetV2        EfficientNetB0    
+-----------------------------------------------------------------
+Validation Accuracy                    85.51%           85.51%
+Validation Loss                        0.3868           0.3609
+Validation Macro F1                    0.8448           0.8429
+Validation Macro Precision             0.8579           0.8446
+Validation Macro Recall                0.8390           0.8531
+Training Duration (s)                 177.59s          369.91s
+Model File Size (MB)                  20.79MB          27.67MB
+Batch-1 Latency (ms)                 339.30ms         697.49ms
+-----------------------------------------------------------------
+
+Model Selection Decision:
+  - Selected Model: EfficientNetB0
+  - Active Model Path: C:\Users\chait\Downloads\major_project\major_project\models\nutrient_detection\nutrient_model.keras
+  - Comparison Model Preserved: Yes (C:\Users\chait\Downloads\major_project\major_project\models\nutrient_detection)
+  - Justification: EfficientNetB0 achieved superior validation performance (F1: 0.8429, Accuracy: 85.51%, Loss: 0.3609) compared to MobileNetV2 (F1: 0.8448, Accuracy: 85.51%).

@@ -1,0 +1,53 @@
+MAIZE NUTRIENT DEFICIENCY DATASET: SPLIT REPORT
+================================================
+
+Preparation Date: 2026-11-12T12:25:03+05:30
+Source Directory: C:\Users\chait\Downloads\major_project\major_project\datasets\Maize Nutrient Deficiency Dataset
+Processed Directory: C:\Users\chait\Downloads\major_project\major_project\datasets\maize_nutrient_processed
+Random Seed: 42
+Target Proportions: train 70%, val 15%, test 15%
+All original images preserved untouched.
+
+Total Images per Split:
+  train: 323 images (69.76%)
+  val: 69 images (14.90%)
+  test: 71 images (15.33%)
+
+Class Counts and Proportions by Split:
+
+Healthy:
+  Total: 72 images
+  - train: 50 images (69.44% of class)
+  - val: 11 images (15.28% of class)
+  - test: 11 images (15.28% of class)
+
+Magnesium:
+  Total: 123 images
+  - train: 86 images (69.92% of class)
+  - val: 18 images (14.63% of class)
+  - test: 19 images (15.45% of class)
+
+Nitrogen:
+  Total: 99 images
+  - train: 69 images (69.70% of class)
+  - val: 15 images (15.15% of class)
+  - test: 15 images (15.15% of class)
+
+Phosphorus:
+  Total: 113 images
+  - train: 79 images (69.91% of class)
+  - val: 17 images (15.04% of class)
+  - test: 17 images (15.04% of class)
+
+Potassium:
+  Total: 56 images
+  - train: 39 images (69.64% of class)
+  - val: 8 images (14.29% of class)
+  - test: 9 images (16.07% of class)
+
+Validation and Leakage Checks:
+  - Source images assigned: 463
+  - Total copied images: 463
+  - Duplicate/near-duplicate groups crossing splits: NONE (0)
+  - Exact duplicate groups crossing splits: NONE (0)
+  - Fixed seed utilized: 42

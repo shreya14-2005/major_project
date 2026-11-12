@@ -1,0 +1,24 @@
+{
+  "class_to_index": {
+    "Healthy": 0,
+    "Magnesium": 1,
+    "Nitrogen": 2,
+    "Phosphorus": 3,
+    "Potassium": 4
+  },
+  "index_to_class": {
+    "0": "Healthy",
+    "1": "Magnesium",
+    "2": "Nitrogen",
+    "3": "Phosphorus",
+    "4": "Potassium"
+  },
+  "original_mapping": {
+    "Helathy": "Healthy",
+    "Magnessium": "Magnesium",
+    "Nitrogen": "Nitrogen",
+    "Phosphorous": "Phosphorus",
+    "Pottasium": "Potassium"
+  },
+  "total_classes": 5
+}

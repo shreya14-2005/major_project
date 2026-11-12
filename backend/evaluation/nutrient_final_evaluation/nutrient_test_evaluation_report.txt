@@ -1,0 +1,62 @@
+PLANTHEALTHAI: MAIZE NUTRIENT DEFICIENCY MODEL TEST EVALUATION
+===============================================================
+
+Evaluation Date: 2026-11-12T12:44:55+05:30
+Active Model: C:\Users\chait\Downloads\major_project\major_project\models\nutrient_detection\nutrient_model.keras
+Architecture: EfficientNetB0 (Transfer Learning with ImageNet weights)
+Input Resolution: 224x224 RGB
+Test Set Count: 71 images
+Integrity Note: The test set was evaluated exactly ONCE after model selection
+                and was strictly held out from training, validation, and hyperparameter tuning.
+
+Overall Test Metrics:
+---------------------
+Accuracy:           92.96%
+Macro Precision:    0.9337
+Macro Recall:       0.9316
+Macro F1-Score:     0.9300
+Weighted F1-Score:  0.9302
+Correct Predictions:   66 / 71 (92.96%)
+Incorrect Predictions: 5 / 71 (7.04%)
+
+Model Footprint and Latency:
+----------------------------
+Model File Size:       27.67 MB
+Batch-1 Inference Latency: 629.95 ms/image (averaged over 50 passes)
+
+Detailed Classification Report:
+-------------------------------
+              precision    recall  f1-score   support
+
+     Healthy     0.8462    1.0000    0.9167        11
+   Magnesium     1.0000    0.8947    0.9444        19
+    Nitrogen     0.9333    0.9333    0.9333        15
+  Phosphorus     0.8889    0.9412    0.9143        17
+   Potassium     1.0000    0.8889    0.9412         9
+
+    accuracy                         0.9296        71
+   macro avg     0.9337    0.9316    0.9300        71
+weighted avg     0.9355    0.9296    0.9302        71
+
+
+Confusion Matrix (Rows: Actual, Columns: Predicted):
+----------------------------------------------------
+Actual \ Pred       Healthy   Magnesium    Nitrogen  Phosphorus   Potassium
+---------------------------------------------------------------------------
+Healthy                  11           0           0           0           0
+Magnesium                 2          17           0           0           0
+Nitrogen                  0           0          14           1           0
+Phosphorus                0           0           1          16           0
+Potassium                 0           0           0           1           8
+
+Key Limitations and Scientific Constraints:
+-------------------------------------------
+1. Sample Size Limitation: The entire dataset contains 463 images (71 in the test set).
+   While accuracy and F1 metrics demonstrate strong pattern learning on held-out test data,
+   small sample numbers yield wider statistical confidence intervals.
+2. Biological Label Ground Truth: Model labels reflect the contributor's field survey annotations.
+   These annotations are NOT biologically confirmed by destructive leaf tissue laboratory analysis
+   (such as ICP-OES or Kjeldahl testing) or controlled Hoagland nutrient deprivation trials.
+3. OOD & Environmental Generalization: Field lighting, soil variations, hybrid cultivars, and co-occurring
+   fungal/bacterial diseases can produce visual leaf symptoms that overlap with nutrient stress.
+   Predictions must be treated as computer vision pattern indications, not biological guarantees.

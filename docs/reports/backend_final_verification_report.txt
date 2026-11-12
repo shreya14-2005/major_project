@@ -1,0 +1,193 @@
+PLANTHEALTHAI - FINAL MACHINE LEARNING BACKEND VERIFICATION
+===========================================================
+Verification date: 2026-11-12
+Project root: C:\Users\chait\Downloads\major_project\major_project
+Scope: Environment setup and inference/explainability smoke tests.
+
+OVERALL STATUS
+--------------
+PASS - disease and nutrient inference/explainability smoke tests passed in
+the project-local environment. The backend is ready for frontend integration
+with the verified active disease model, MobileNetV2. The historically
+intended disease EfficientNetB0 and 96.18% claim remain NOT VERIFIED and
+must not be represented as established results. The disease test report
+records 95.22%; this report did not rerun or recalculate test-set evaluation.
+
+No model was trained, no held-out test-set evaluation was rerun, and no
+frontend, dataset, model weights, class mapping, existing evaluation report,
+or explainability implementation was modified. Disease smoke testing used
+one existing test image for inference/Grad-CAM and focused unit tests; this
+is not a new aggregate evaluation.
+
+1. PYTHON ENVIRONMENT AND DEPENDENCIES
+--------------------------------------
+Project virtual environment:
+  C:\Users\chait\Downloads\major_project\major_project\.venv
+Interpreter:
+  C:\Users\chait\Downloads\major_project\major_project\.venv\Scripts\python.exe
+Python: 3.12.0
+Environment type: project-local venv with --system-site-packages.
+The base Python environment was not a venv. TensorFlow and pre-existing
+scientific packages are reused from the base installation; only missing
+packages and their missing small dependencies were installed into .venv.
+No packages were installed globally.
+
+Verified package versions inside the project venv:
+  TensorFlow: 2.18.1
+  Keras: 3.15.1
+  tf.keras: 3.15.1
+  NumPy: 2.0.2
+  Pillow: 13.0.0
+  Matplotlib: 3.11.2
+  scikit-learn: 1.9.1
+  SciPy: 1.18.1
+  OpenCV distribution: opencv-python-headless 5.0.0.93
+  cv2 runtime: 5.0.0
+  pytest: 9.2.0
+TensorFlow was built without CUDA; no GPU was detected.
+TensorFlow/Keras versions before and after venv creation are unchanged.
+Both model families loaded and ran with TensorFlow 2.18.1 / Keras 3.15.1.
+
+Setup performed:
+  python -m venv --system-site-packages major_project\.venv
+  major_project\.venv\Scripts\python.exe -m pip install opencv-python-headless pytest
+The project has no requirements.txt, pyproject.toml, environment.yml, or
+Pipfile. No environment manifest was added.
+
+2. DISEASE MODULE
+-----------------
+Overall: PASS for requested runtime smoke checks.
+
+Active model:
+  models\maize_disease_model.keras
+Verified architecture: MobileNetV2.
+Input shape: (None, 224, 224, 3).
+Output shape: (None, 4).
+Class mapping: models\maize_disease_classes.json:
+  0 Blight, 1 Common_Rust, 2 Gray_Leaf_Spot, 3 Healthy.
+Preprocessing: EXIF orientation correction, RGB, resize to 224x224 using
+the disease pipeline's bilinear resize, float32 raw pixel values [0,255];
+the saved model applies its embedded Rescaling (scale=1/127.5, offset=-1).
+
+Focused command:
+  .venv\Scripts\python.exe -m pytest -q -p no:cacheprovider
+    testing\test_disease_module.py -k
+    "class_mapping_contains_four_expected_classes or
+     model_loads_and_has_training_preprocessing or
+     rgb_conversion_and_resize_match_training_preprocessing or
+     model_predictions_have_four_valid_probabilities or
+     confidence_threshold_marks_uncertain_without_discarding_score or
+     quality_warnings_detect_blur_brightness_and_small_dimensions or
+     invalid_empty_unsupported_and_corrupt_paths_are_rejected or
+     complete_inference_returns_review_and_ood_fields or
+     gradcam_and_gradcam_plus_plus_target_prediction or
+     real_world_image_folder_is_separate_from_dataset"
+Result: PASS - 10 passed in 25.09 seconds.
+
+Additional direct smoke image:
+  datasets\maize_disease_processed\test\Blight\Corn_Blight (1007).JPG
+  Model: maize_mobilenetv2.
+  Prediction: Blight.
+  Confidence: 0.999951.
+  Four probabilities were finite and summed to approximately one.
+  Preprocessed shape: 224x224x3 float32.
+  Grad-CAM: PASS, finite 7x7 heatmap and valid overlay.
+  Grad-CAM++: PASS, finite 7x7 heatmap and valid overlay.
+  Missing image: rejected.
+  Corrupted image: rejected.
+  Missing model path: raised FileNotFoundError as expected.
+The test command deliberately selected smoke tests only. It did not invoke
+the test module's report-generation/main workflow or the sealed aggregate
+test-set evaluation.
+
+Model identity/accuracy caveat:
+  The checked-in disease evaluation report records MobileNetV2 and 95.22%
+  accuracy (598/628). This verification did not rerun that evaluation.
+  EfficientNetB0 as the historically intended disease model and the 96.18%
+  disease accuracy claim remain NOT VERIFIED; their provenance discrepancy
+  is documented in disease_model_discrepancy_investigation.txt.
+
+3. NUTRIENT MODULE
+------------------
+Overall: PASS for model, prediction, preprocessing, Grad-CAM, and input
+error smoke checks.
+
+Active model:
+  models\nutrient_detection\nutrient_model.keras
+Verified architecture: EfficientNetB0_Nutrient.
+Input shape: (None, 224, 224, 3).
+Output shape: (None, 5).
+Final convolutional feature layer: top_conv; feature map: 7x7x1280.
+Class mapping: models\nutrient_detection\nutrient_classes.json:
+  0 Healthy, 1 Magnesium, 2 Nitrogen, 3 Phosphorus, 4 Potassium.
+Preprocessing: RGB, Pillow LANCZOS resize to 224x224, float32 raw pixels
+in [0,255], matching the standalone predictor exactly; normalization is
+embedded in the saved model.
+
+One existing held-out image was used per class for single-image smoke tests.
+No test-set metric was calculated or changed:
+  Actual class  Prediction  Confidence  Probabilities  Grad-CAM
+  Healthy       Healthy     0.940978    5, sum=1       PASS
+  Magnesium     Magnesium   0.984937    5, sum=1       PASS
+  Nitrogen      Nitrogen    0.996619    5, sum=1       PASS
+  Phosphorus    Phosphorus  0.995019    5, sum=1       PASS
+  Potassium     Potassium   0.772814    5, sum=1       PASS
+
+For all five, preprocessing matched the predictor; Grad-CAM produced finite,
+nonblank, nonconstant 7x7 maps and saved PNG/JSON pairs in a temporary
+directory, which was cleaned after verification. Existing persistent
+explainability results were left untouched.
+Explicit target selection: PASS (Healthy image prediction, Potassium target).
+Corrupted image: rejected with ValueError.
+Missing model path: rejected with FileNotFoundError.
+The existing nutrient evaluation report records 92.96% test accuracy
+(66/71); it was inspected previously and was not recomputed in this task.
+
+4. PRESERVATION
+---------------
+Required disease model SHA-256:
+  4EEBD71DF1C7E076A0B477F3BE3B1DD3927F101B37ABFC9CC7B60EFD2660C733
+Before environment setup:
+  4EEBD71DF1C7E076A0B477F3BE3B1DD3927F101B37ABFC9CC7B60EFD2660C733
+After dependency installation and tests:
+  4EEBD71DF1C7E076A0B477F3BE3B1DD3927F101B37ABFC9CC7B60EFD2660C733
+Status: PASS - exact match before and after.
+
+Nutrient weight hashes observed after smoke tests:
+  nutrient_model.keras:
+    DF915124FEA863C403172587EA1DB18A35F7959AAB4C861DD687FB9895A25988
+  mobilenetv2_nutrient_best.keras:
+    700A2BF75AFE7D53B1A9CB60CD703899315A1B3D518C4835C34F8944E1BBB5A2
+No model weight file was written by these tests.
+
+5. FAILURES AND LIMITATIONS
+---------------------------
+- No runtime smoke-test failures after setting up the project venv.
+- The full disease test runner was not executed: it also regenerates reports
+  and processes the full test split, which was excluded to preserve existing
+  reports and avoid rerunning held-out evaluation.
+- The 95.22% disease accuracy is a previously recorded evaluation result,
+  not recalculated here. The reported historical EfficientNetB0/96.18%
+  disease model/result remains NOT VERIFIED.
+- Nutrient smoke checks exercised one image per class; they do not measure
+  generalization or replace the existing one-time test evaluation.
+- The venv uses --system-site-packages to reuse existing compatible
+  TensorFlow/Keras and scientific packages. OpenCV and pytest were installed
+  locally in that venv, not globally.
+- Grad-CAM maps are low-resolution (7x7) approximate visual explanations;
+  they do not establish biological correctness.
+
+6. FINAL DECISION
+-----------------
+PASS: Runtime inference and Grad-CAM/Grad-CAM++ smoke checks completed for
+the verified active disease MobileNetV2 and the nutrient EfficientNetB0.
+PASS: Disease model SHA-256 remained unchanged.
+NOT VERIFIED: Historical intent to use disease EfficientNetB0 and the
+96.18% disease accuracy claim.
+
+READY for frontend integration against the actual currently wired models,
+using the project venv and the documented class mappings/preprocessing.
+Frontend claims must identify disease accuracy as the existing report's
+95.22%, not 96.18%; do not claim the active disease model is EfficientNetB0.
+Keep the historical discrepancy explicit until primary supporting evidence
+is found.

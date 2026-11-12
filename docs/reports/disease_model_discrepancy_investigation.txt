@@ -1,0 +1,260 @@
+PLANTHEALTHAI - DISEASE MODEL DISCREPANCY INVESTIGATION
+========================================================
+Investigation date: 2026-11-12
+Project root: C:\Users\chait\Downloads\major_project\major_project
+Scope: Read-only inspection plus creation of this requested report.
+No training, test-set evaluation, dependency installation, model change, or
+active-model switch was performed.
+
+EXECUTIVE RESULT
+----------------
+Intended historical final architecture: NOT VERIFIED.
+Currently wired active architecture: MobileNetV2 (verified).
+
+The active model, disease inference code, disease training script, and
+checked-in disease test evaluation identify MobileNetV2. The disease test
+report and its confusion matrix agree on 95.22% test accuracy. The only
+discovered source for 96.18% is a nutrient-development summary that calls the
+same protected model SHA-256 an EfficientNetB0. Loading that exact-hash active
+artifact shows it is MobileNetV2. There is no disease-specific 96.18%
+evaluation report, confusion matrix, training history, or EfficientNetB0
+disease checkpoint in the inspected project.
+
+Consequently, do not switch or overwrite the active model based on the
+discrepant summary. The active MobileNetV2 is the best-supported current
+production artifact, but the historically intended final architecture and
+the provenance of the 96.18% value remain NOT VERIFIED.
+
+1. DISCOVERED DISEASE MODEL FILES
+---------------------------------
+All model-format files in the models directory were inventoried. The two
+disease model files are:
+
+1) Active model:
+   Path: models\maize_disease_model.keras
+   Size: 21,785,346 bytes (20.78 MiB)
+   Last modified: 2026-11-04 13:33:53 (local filesystem time)
+   Loaded Keras model name: maize_mobilenetv2
+   Architecture: MobileNetV2 backbone, nested model
+     mobilenetv2_1.00_224; include_top=False; output feature map 7x7x1280.
+   Input: (None, 224, 224, 3)
+   Output: (None, 4)
+   Head: GlobalAveragePooling2D -> Dropout -> Dense softmax.
+   Embedded input rescaling: scale 1/127.5, offset -1.
+   SHA-256: 4EEBD71DF1C7E076A0B477F3BE3B1DD3927F101B37ABFC9CC7B60EFD2660C733
+   Status: PASS - loads successfully and is MobileNetV2, not EfficientNetB0.
+
+2) Retained training checkpoint:
+   Path: models\.maize_training_gr1ii1xu\frozen_base_best.keras
+   Size: 9,697,880 bytes (9.25 MiB)
+   Last modified: 2026-11-04 13:33:53 (local filesystem time)
+   Loaded Keras model name: maize_mobilenetv2
+   Architecture: MobileNetV2 backbone, nested model
+     mobilenetv2_1.00_224; include_top=False; output feature map 7x7x1280.
+   Input: (None, 224, 224, 3)
+   Output: (None, 4)
+   Embedded input rescaling: scale 1/127.5, offset -1.
+   SHA-256: 8B33C3F16476CC68E3CE10D55EB6188D66B2B39B3EAD937FDAD0FBED3E0BD476
+   Status: PASS - loads as MobileNetV2. Its filename and the training script
+   identify this as the frozen-base candidate, not an EfficientNetB0 model.
+
+No disease EfficientNetB0 checkpoint was found in the models directory.
+No separately named MobileNetV2 comparison checkpoint was found either.
+The disease training script uses a temporary fine-tuned checkpoint named
+fine_tuned_best.keras and removes its temporary directory when the run ends;
+that checkpoint is not currently present. The retained frozen_base_best.keras
+is the only other disease checkpoint discovered.
+
+Nutrient files were excluded from the disease checkpoint list. Their
+EfficientNetB0 and MobileNetV2 files are under
+models\nutrient_detection\ and are not disease models.
+
+2. MODEL, TRAINING, AND CLASS-MAPPING EVIDENCE
+----------------------------------------------
+Training script:
+  training\train_disease_model.py
+  - Module documentation and build_model() explicitly build MobileNetV2.
+  - The model is named maize_mobilenetv2.
+  - The final artifact path is models\maize_disease_model.keras.
+  - Model selection compares frozen and fine-tuned MobileNetV2 phases using
+    validation loss, then writes the selected model and test evaluation.
+  - It does not build EfficientNetB0.
+
+Active prediction path:
+  testing\disease_inference.py
+  MODEL_PATH = models\maize_disease_model.keras
+  CLASS_MAPPING_PATH = models\maize_disease_classes.json
+  The helper loads this path with tf.keras.models.load_model(...,
+  compile=False) and validates the MobileNetV2 rescaling layer.
+
+Other evaluation prediction path:
+  evaluation\analyze_misclassified.py loads
+  models\maize_disease_model.keras and requires its embedded
+  MobileNetV2 preprocessing layer.
+
+Class mapping:
+  models\maize_disease_classes.json
+  Blight=0, Common_Rust=1, Gray_Leaf_Spot=2, Healthy=3.
+  Status: PASS - mapping is independent of nutrient class mapping.
+
+Training history:
+  The training script creates training/validation accuracy and loss plots
+  under outputs\. These files are present:
+    outputs\training_accuracy.png
+    outputs\validation_accuracy.png
+    outputs\training_loss.png
+    outputs\validation_loss.png
+  No disease-specific epoch-history JSON/CSV or persisted per-epoch metric
+  table was found. The training script keeps fit histories in memory for
+  plotting; it does not persist raw epoch history. Thus no saved history
+  verifies either a 96.18% validation result or an EfficientNetB0 run.
+
+3. ACCURACY RESULTS AND REPORT MAPPING
+--------------------------------------
+A) 95.22%:
+   Source: evaluation\test_evaluation_report.txt
+   Status: PASS - supported as the recorded disease test-set result.
+   Model: Selected fine-tuned MobileNetV2 upper layers, as stated in the
+     report; this matches the architecture built by the disease training
+     script and the active artifact architecture.
+   Split: Test split, 628 images. The report states the test set was held out
+     from training and used after model selection.
+   Counts: 598 correct / 628 = 95.2229%, reported as 95.22%.
+   Classification report: embedded in the same test evaluation report.
+   Confusion matrix: evaluation\confusion_matrix.csv, also rendered as
+     outputs\confusion_matrix.png. CSV diagonal total is 598 and total count
+     is 628, matching the reported accuracy.
+   The training script writes the test report and confusion matrix from the
+   selected MobileNetV2 model and saves that selected model at
+   models\maize_disease_model.keras. The saved report does not include the
+   model SHA-256, so byte-level historical identity between report and
+   current artifact cannot be proven from the report alone.
+
+B) 96.18%:
+   Located source: nutrient_model_development_report.txt, in both the project
+   root and its parent directory. The two files are byte-identical.
+   The summary describes the existing disease model as “EfficientNetB0,
+   96.18% accuracy” and cites the protected SHA-256 listed above.
+   Status: FAIL as a supported description of the current disease model:
+   that cited SHA-256 matches the current active file, and loading the file
+   identifies it as MobileNetV2.
+   Status: NOT VERIFIED as an accuracy result: no disease-specific
+   evaluation report, classification report, confusion matrix, prediction
+   CSV, raw history, split identification, or EfficientNetB0 disease
+   checkpoint supporting 96.18% was found.
+   The summary does not establish whether 96.18% is validation or test
+   accuracy, which model produced it, or which report/matrix belongs to it.
+   No historical split/result has been inferred or fabricated.
+
+C) Dataset split context:
+   evaluation\dataset_split_report.txt records 2,932 train, 628 validation,
+   and 628 test images. The 95.22% disease evaluation report explicitly
+   identifies its 628-image set as the test set. No source was found tying
+   96.18% to either the validation or test split.
+
+4. FINAL MODEL DETERMINATION
+----------------------------
+Currently active model: MobileNetV2 at
+  models\maize_disease_model.keras
+Status: PASS - runtime architecture, model path in prediction code,
+training script, and the 95.22% test report are mutually consistent with a
+MobileNetV2 disease pipeline.
+
+Historically intended final model: NOT VERIFIED.
+The 96.18% summary directly contradicts the loaded architecture of the file
+whose SHA it cites. The test report identifies a fine-tuned MobileNetV2
+selection with 95.22% test accuracy. No supported EfficientNetB0 disease
+artifact or disease-specific evidence for the 96.18% result was located.
+The active model was not switched, renamed, overwritten, or deleted.
+
+Recommendation: Preserve MobileNetV2 as the current active model unless
+original disease-specific training/evaluation records establish otherwise.
+Before claiming EfficientNetB0 or 96.18%, locate the original run logs,
+model artifact, validation/test split identity, and matching classification
+report/confusion matrix. Do not rerun the sealed test evaluation merely to
+resolve this historical discrepancy.
+
+5. ACTIVE PYTHON ENVIRONMENT AND DEPENDENCIES
+---------------------------------------------
+Active command: python
+Executable:
+  C:\Users\chait\AppData\Local\Programs\Python\Python312\python.exe
+Python: 3.12.0
+TensorFlow: 2.18.1
+Keras: 3.15.1
+Environment: NOT a virtual environment (sys.prefix equals sys.base_prefix).
+VIRTUAL_ENV and CONDA_PREFIX are unset.
+OpenCV (cv2): NOT INSTALLED
+pytest: NOT INSTALLED
+numpy: installed
+Pillow (PIL): installed
+matplotlib: installed
+scikit-learn (sklearn): installed
+scipy: installed
+
+Disease runtime impact:
+- testing\disease_inference.py imports cv2 directly, so the standalone
+  disease helper currently fails at import in this interpreter.
+- explainability\gradcam.py and explainability\gradcam_plus_plus.py also
+  import cv2 directly, so both disease explanation scripts fail at import.
+- pytest is required to run testing\test_disease_module.py and is absent.
+- TensorFlow, Keras, NumPy, Pillow, Matplotlib, scikit-learn, and SciPy are
+  present. The immediate missing packages observed are OpenCV and pytest.
+
+Safe installation instructions (not run):
+Open PowerShell in the project directory and run:
+
+  Set-Location 'C:\Users\chait\Downloads\major_project\major_project'
+  & 'C:\Users\chait\AppData\Local\Programs\Python\Python312\python.exe' -m venv --system-site-packages .venv
+  & '.\.venv\Scripts\python.exe' -m pip install opencv-python-headless pytest
+
+This creates a project-local virtual environment and installs the missing
+packages into that environment. --system-site-packages reuses the already
+installed TensorFlow/Keras and other packages without reinstalling/upgrading
+them globally. After activation/use of .venv, verify with:
+
+  & '.\.venv\Scripts\python.exe' -c "import tensorflow, keras, cv2, pytest; print(tensorflow.__version__, keras.__version__, cv2.__version__, pytest.__version__)"
+  & '.\.venv\Scripts\python.exe' -m pytest -q testing\test_disease_module.py
+
+No packages were installed during this investigation.
+
+6. SHA-256 MODEL PRESERVATION
+-----------------------------
+Required SHA-256:
+  4EEBD71DF1C7E076A0B477F3BE3B1DD3927F101B37ABFC9CC7B60EFD2660C733
+
+Before inspection:
+  4EEBD71DF1C7E076A0B477F3BE3B1DD3927F101B37ABFC9CC7B60EFD2660C733
+  Status: PASS
+
+After inspection, before report creation:
+  4EEBD71DF1C7E076A0B477F3BE3B1DD3927F101B37ABFC9CC7B60EFD2660C733
+  Status: PASS
+
+No dependency installation or model modification was performed.
+
+7. FINAL STATUS
+---------------
+PASS:
+- Protected disease model hash matches the required value.
+- Active model and retained checkpoint load and are MobileNetV2.
+- Active prediction path, disease mapping, MobileNetV2 training script,
+  95.22% test report, and confusion matrix are consistent.
+- Disease test accuracy arithmetic is supported by the saved confusion
+  matrix: 598/628 = 95.22%.
+
+FAIL:
+- The nutrient-development summary's description of the protected disease
+  model as EfficientNetB0 conflicts with the loaded architecture.
+- Disease prediction and Grad-CAM/Grad-CAM++ cannot currently be imported
+  using the active Python environment because cv2 is absent.
+
+NOT VERIFIED:
+- Intended historical final architecture (EfficientNetB0 vs MobileNetV2).
+- Provenance, model, and split behind the 96.18% accuracy claim.
+- Current disease helper/Grad-CAM execution in a runtime with OpenCV.
+- Automated disease suite in a runtime with pytest.
+
+The audit stopped without selecting a new model or changing any existing
+project artifact. The only project file created by this investigation is
+disease_model_discrepancy_investigation.txt.

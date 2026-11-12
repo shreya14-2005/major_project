@@ -1,0 +1,25 @@
+{
+  "image_path": "C:\\Users\\chait\\Downloads\\major_project\\major_project\\datasets\\maize_nutrient_processed\\test\\Magnesium\\1 (107).jpeg",
+  "model_path": "C:\\Users\\chait\\Downloads\\major_project\\major_project\\models\\nutrient_detection\\nutrient_model.keras",
+  "predicted_class": "Magnesium",
+  "prediction_confidence": 0.9849370121955872,
+  "target_class": "Magnesium",
+  "target_class_confidence": 0.9849370121955872,
+  "class_probabilities": {
+    "Healthy": 0.013693599961698055,
+    "Magnesium": 0.9849370121955872,
+    "Nitrogen": 0.0003458026039879769,
+    "Phosphorus": 0.0007852844428271055,
+    "Potassium": 0.0002383184910286218
+  },
+  "convolutional_layer": "top_conv",
+  "feature_map_shape": [
+    7,
+    7
+  ],
+  "visualization_size": [
+    554,
+    925
+  ],
+  "preprocessing": "RGB; Pillow LANCZOS resize to 224x224; float32 values in [0,255]; the saved EfficientNetB0 model applies its own internal normalization."
+}

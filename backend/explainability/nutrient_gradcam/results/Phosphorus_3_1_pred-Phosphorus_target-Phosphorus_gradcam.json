@@ -1,0 +1,25 @@
+{
+  "image_path": "C:\\Users\\chait\\Downloads\\major_project\\major_project\\datasets\\maize_nutrient_processed\\test\\Phosphorus\\3 (1).jpeg",
+  "model_path": "C:\\Users\\chait\\Downloads\\major_project\\major_project\\models\\nutrient_detection\\nutrient_model.keras",
+  "predicted_class": "Phosphorus",
+  "prediction_confidence": 0.995018720626831,
+  "target_class": "Phosphorus",
+  "target_class_confidence": 0.995018720626831,
+  "class_probabilities": {
+    "Healthy": 0.00010061648936243728,
+    "Magnesium": 0.0013043381040915847,
+    "Nitrogen": 0.002718353411182761,
+    "Phosphorus": 0.995018720626831,
+    "Potassium": 0.0008580480352975428
+  },
+  "convolutional_layer": "top_conv",
+  "feature_map_shape": [
+    7,
+    7
+  ],
+  "visualization_size": [
+    765,
+    407
+  ],
+  "preprocessing": "RGB; Pillow LANCZOS resize to 224x224; float32 values in [0,255]; the saved EfficientNetB0 model applies its own internal normalization."
+}

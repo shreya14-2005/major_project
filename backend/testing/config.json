@@ -1,0 +1,15 @@
+{
+  "confidence_threshold": 0.7,
+  "threshold_validated": false,
+  "quality_warnings": {
+    "blur_laplacian_variance_below": 100.0,
+    "dark_mean_grayscale_below": 40.0,
+    "bright_mean_grayscale_above": 215.0,
+    "minimum_width": 160,
+    "minimum_height": 160,
+    "maximum_dimension": 4096,
+    "maximum_aspect_ratio": 6.0
+  },
+  "notes": "The confidence threshold and image-quality cutoffs are configurable starting points, not scientifically validated limits. Select confidence_threshold using a separate labeled validation set: compare coverage, per-class error among accepted predictions, and the cost of missed/uncertain cases across candidate thresholds. Do not tune on the test set. This classifier has no validated out-of-distribution or non-maize rejection mechanism.",
+  "ood_guidance": "Current tested rejection is limited to empty paths, missing files, corrupt images, and unsupported extensions. For genuine OOD handling, collect independent labeled in-scope and out-of-scope examples (including other crops and unrelated objects), calibrate an embedding-distance or energy-based detector on a separate validation set, then measure false acceptance/rejection on a held-out external set. Do not enable OOD rejection or describe the model as detecting non-maize until that evaluation has been completed."
+}

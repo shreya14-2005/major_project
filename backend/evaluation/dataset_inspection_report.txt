@@ -1,0 +1,376 @@
+MAIZE DISEASE DATASET INSPECTION REPORT
+==========================================
+
+Inspection date: 2026-10-31T16:06:13+05:30
+Project directory: C:\Users\ADMIN\Desktop\major_project
+Dataset directory inspected: C:\Users\ADMIN\Desktop\major_project\datasets\archive (3)\data
+Requested path datasets/maize_disease exists: False
+
+Scope and safety
+----------------
+Only the selected disease dataset directory was inspected.
+No original dataset files were moved, modified, or deleted.
+No model training was performed.
+The separate maize nutrient deficiency dataset was not inspected or mixed in.
+
+Folder structure
+----------------
+Total nested directories: 4
+Total files of all formats: 4188
+Directories:
+  - Blight
+  - Common_Rust
+  - Gray_Leaf_Spot
+  - Healthy
+Train/validation/test-style split directories found: False
+Split directory names found: none
+Dataset layout: flat class-folder layout; no separate train, validation, or test folders.
+
+Class folders and counts
+------------------------
+Blight: 1146 images (27.36%)
+Common_Rust: 1306 images (31.18%)
+Gray_Leaf_Spot: 574 images (13.71%)
+Healthy: 1162 images (27.75%)
+Total supported-extension images in class folders: 4188
+Total supported-extension files found anywhere under dataset root: 4188
+
+Expected class-name check
+-------------------------
+Expected labels (normalized for capitalization/separators): blight, common rust, gray leaf spot, healthy
+Observed class-folder names: Blight, Common_Rust, Gray_Leaf_Spot, Healthy
+Expected labels missing: none
+Unexpected labels: none
+The folder named 'Blight' is reported exactly as supplied. Its specific disease identity (including whether it is Northern Leaf Blight) cannot be established from the folder name alone.
+
+Class imbalance
+----------------
+Smallest non-empty class: 574
+Largest class: 1306
+Largest-to-smallest ratio: 2.28:1
+Observation: class counts are noticeably uneven; the largest class has at least twice the images of the smallest class.
+
+File formats, dimensions, and readability
+------------------------------------------
+Supported image-extension files found: 4188
+Unsupported file count: 0
+Supported image formats decoded:
+  - JPEG: 4183
+  - MPO: 1
+  - PNG: 4
+Image dimensions (width x height):
+Distinct image dimensions: 266
+Most common size: 256x256 (3852 images)
+  - 1000x442: 1
+  - 1000x563: 1
+  - 1000x573: 1
+  - 1000x585: 1
+  - 1000x750: 1
+  - 1022x1024: 1
+  - 1024x400: 1
+  - 1024x416: 1
+  - 1024x473: 1
+  - 1024x512: 2
+  - 1024x577: 1
+  - 1024x608: 1
+  - 1024x681: 1
+  - 1024x758: 1
+  - 1024x768: 8
+  - 1054x702: 1
+  - 1080x421: 1
+  - 1080x614: 1
+  - 1080x660: 1
+  - 1158x1200: 1
+  - 1170x501: 1
+  - 1176x781: 1
+  - 1200x1494: 1
+  - 1200x1600: 5
+  - 1200x630: 2
+  - 1200x900: 5
+  - 1218x569: 1
+  - 1224x1632: 1
+  - 1275x960: 1
+  - 1278x958: 1
+  - 1280x1280: 1
+  - 1280x960: 1
+  - 1333x1000: 2
+  - 1338x357: 1
+  - 1368x840: 1
+  - 1410x730: 1
+  - 1440x2560: 1
+  - 1489x3264: 1
+  - 1500x1048: 1
+  - 1500x1125: 4
+  - 1500x2000: 1
+  - 1500x657: 1
+  - 1536x827: 1
+  - 1600x1200: 3
+  - 1712x1368: 1
+  - 1790x1897: 1
+  - 180x347: 1
+  - 1819x2731: 1
+  - 1836x3264: 1
+  - 185x500: 1
+  - 188x317: 1
+  - 1920x1080: 1
+  - 1920x1440: 1
+  - 1936x1296: 1
+  - 194x350: 1
+  - 200x590: 1
+  - 2048x1152: 1
+  - 2048x1536: 3
+  - 2128x1500: 1
+  - 220x293: 1
+  - 2273x1901: 1
+  - 227x300: 1
+  - 239x454: 1
+  - 242x195: 1
+  - 2448x2448: 1
+  - 2448x3264: 1
+  - 246x449: 1
+  - 250x200: 1
+  - 252x450: 1
+  - 256x256: 3852
+  - 256x385: 1
+  - 2592x1728: 2
+  - 2592x1936: 1
+  - 2592x1944: 1
+  - 267x350: 1
+  - 273x400: 1
+  - 2761x2027: 1
+  - 281x330: 1
+  - 282x460: 1
+  - 2848x4272: 1
+  - 288x419: 1
+  - 290x358: 1
+  - 292x116: 1
+  - 298x372: 1
+  - 299x371: 1
+  - 300x191: 1
+  - 300x200: 3
+  - 300x225: 2
+  - 300x236: 1
+  - 300x300: 2
+  - 300x339: 1
+  - 300x386: 1
+  - 309x194: 1
+  - 310x179: 1
+  - 313x213: 1
+  - 313x386: 1
+  - 320x228: 1
+  - 320x240: 1
+  - 325x209: 1
+  - 3264x2448: 7
+  - 332x250: 1
+  - 334x534: 1
+  - 335x442: 1
+  - 340x255: 1
+  - 341x454: 1
+  - 3456x5184: 1
+  - 349x540: 1
+  - 350x230: 1
+  - 350x260: 1
+  - 350x263: 1
+  - 350x299: 1
+  - 350x466: 1
+  - 360x242: 1
+  - 360x640: 1
+  - 362x240: 1
+  - 363x237: 1
+  - 365x335: 1
+  - 374x350: 1
+  - 375x255: 1
+  - 378x308: 1
+  - 379x646: 1
+  - 384x287: 1
+  - 388x257: 1
+  - 390x259: 1
+  - 392x236: 1
+  - 4000x3000: 1
+  - 400x261: 1
+  - 400x263: 1
+  - 400x267: 2
+  - 400x268: 1
+  - 400x272: 1
+  - 400x300: 4
+  - 400x302: 1
+  - 400x334: 1
+  - 400x350: 1
+  - 400x400: 1
+  - 400x487: 1
+  - 400x533: 1
+  - 400x766: 1
+  - 401x341: 1
+  - 4032x3024: 1
+  - 412x305: 1
+  - 417x275: 1
+  - 420x378: 1
+  - 430x359: 1
+  - 432x252: 1
+  - 432x268: 1
+  - 432x271: 1
+  - 432x273: 1
+  - 432x287: 1
+  - 432x290: 1
+  - 432x309: 1
+  - 432x313: 1
+  - 432x324: 3
+  - 432x329: 1
+  - 432x350: 1
+  - 432x679: 1
+  - 439x308: 1
+  - 450x300: 1
+  - 450x338: 2
+  - 450x612: 1
+  - 4608x3456: 3
+  - 460x340: 1
+  - 461x666: 1
+  - 471x628: 1
+  - 472x480: 1
+  - 473x306: 1
+  - 477x206: 1
+  - 480x320: 4
+  - 480x360: 1
+  - 482x296: 1
+  - 482x378: 1
+  - 489x1018: 1
+  - 495x400: 1
+  - 497x309: 1
+  - 500x195: 1
+  - 500x375: 2
+  - 500x500: 1
+  - 500x734: 1
+  - 500x889: 1
+  - 504x335: 1
+  - 505x283: 1
+  - 507x297: 1
+  - 508x337: 1
+  - 5184x3456: 1
+  - 519x279: 1
+  - 521x833: 1
+  - 524x393: 1
+  - 525x395: 1
+  - 525x699: 1
+  - 527x433: 1
+  - 550x362: 1
+  - 550x413: 2
+  - 563x1122: 1
+  - 563x554: 1
+  - 565x374: 1
+  - 565x711: 1
+  - 575x188: 1
+  - 575x431: 1
+  - 576x1024: 2
+  - 580x662: 1
+  - 590x200: 1
+  - 590x393: 1
+  - 594x374: 1
+  - 600x1067: 1
+  - 600x340: 1
+  - 600x400: 2
+  - 600x450: 1
+  - 600x887: 1
+  - 606x404: 1
+  - 612x501: 1
+  - 613x700: 1
+  - 616x331: 1
+  - 618x463: 1
+  - 628x467: 1
+  - 628x472: 1
+  - 635x417: 1
+  - 640x427: 1
+  - 640x428: 1
+  - 640x480: 4
+  - 640x640: 1
+  - 641x482: 1
+  - 650x1024: 1
+  - 651x488: 1
+  - 660x276: 1
+  - 662x335: 1
+  - 666x443: 1
+  - 672x832: 3
+  - 674x510: 1
+  - 675x1200: 7
+  - 675x414: 1
+  - 676x1200: 1
+  - 690x345: 1
+  - 694x583: 1
+  - 700x394: 2
+  - 700x482: 1
+  - 723x451: 1
+  - 743x1591: 1
+  - 748x540: 1
+  - 750x350: 5
+  - 751x1001: 1
+  - 754x482: 1
+  - 765x257: 1
+  - 765x325: 1
+  - 768x1024: 1
+  - 774x528: 1
+  - 778x437: 1
+  - 780x511: 1
+  - 788x371: 1
+  - 800x600: 1
+  - 800x776: 1
+  - 810x1038: 1
+  - 852x639: 1
+  - 862x882: 1
+  - 882x1632: 1
+  - 884x3071: 1
+  - 891x573: 1
+  - 896x407: 1
+  - 900x1200: 2
+  - 900x595: 1
+  - 900x675: 2
+  - 900x849: 1
+  - 960x1280: 1
+  - 960x540: 2
+  - 960x720: 1
+  - 995x611: 1
+Corrupted or unreadable image count: 0
+Corrupted/unreadable files:
+  (none)
+Unsupported files:
+  (none)
+
+Duplicate images
+----------------
+Exact file duplicates are detected using SHA-256 over file bytes.
+Duplicate file groups: 2
+Duplicate file count beyond first copies: 2
+Decoded-pixel duplicates compare pixel content after conversion to RGBA, so differently encoded copies can also be detected.
+Decoded-pixel duplicate groups: 2
+Decoded-pixel duplicate count beyond first copies: 2
+Duplicate groups appearing in more than one class: 2
+Duplicate groups (decoded-pixel matches):
+  - Blight\Corn_Blight (1104).jpg | Gray_Leaf_Spot\Corn_Gray_Spot (564).jpg
+  - Blight\Corn_Blight (77).jpg | Gray_Leaf_Spot\Corn_Gray_Spot (19).jpg
+Format compatibility note: at least one .jpg/.jpeg file decoded as MPO; verify compatibility with the chosen training image loader.
+
+Per-class image properties
+--------------------------
+Blight:
+  Formats: {'JPEG': 1146}
+  Dimensions: {'1000x585': 1, '788x371': 1, '641x482': 1, '300x200': 1, '256x256': 985, '1080x421': 1, '1489x3264': 1, '300x339': 1, '400x267': 1, '450x612': 1, '400x334': 1, '340x255': 1, '618x463': 1, '1158x1200': 1, '362x240': 1, '1500x1125': 3, '250x200': 1, '675x414': 1, '606x404': 1, '2592x1936': 1, '1200x1600': 5, '2448x2448': 1, '363x237': 1, '3264x2448': 1, '519x279': 1, '1819x2731': 1, '884x3071': 1, '400x300': 4, '662x335': 1, '594x374': 1, '995x611': 1, '497x309': 1, '565x711': 1, '960x1280': 1, '432x290': 1, '2592x1944': 1, '600x400': 2, '563x554': 1, '1024x512': 2, '500x734': 1, '896x407': 1, '332x250': 1, '473x306': 1, '640x640': 1, '400x302': 1, '1920x1080': 1, '1200x1494': 1, '1024x400': 1, '1024x768': 3, '2048x1536': 1, '439x308': 1, '723x451': 1, '2448x3264': 1, '290x358': 1, '360x640': 1, '524x393': 1, '1936x1296': 1, '500x195': 1, '521x833': 1, '504x335': 1, '384x287': 1, '281x330': 1, '180x347': 1, '505x283': 1, '220x293': 1, '432x350': 1, '432x313': 1, '400x261': 1, '1170x501': 1, '1200x900': 3, '1600x1200': 2, '640x427': 1, '256x385': 1, '400x766': 1, '628x472': 1, '400x533': 1, '325x209': 1, '590x200': 1, '628x467': 1, '379x646': 1, '960x540': 2, '461x666': 1, '335x442': 1, '650x1024': 1, '882x1632': 1, '432x324': 1, '400x350': 1, '400x400': 1, '495x400': 1, '1024x473': 1, '334x534': 1, '239x454': 1, '246x449': 1, '252x450': 1, '450x300': 1, '780x511': 1, '635x417': 1, '300x300': 1, '1024x577': 1, '482x296': 1, '1536x827': 1, '188x317': 1, '282x460': 1, '480x320': 1, '675x1200': 6, '900x1200': 2, '460x340': 1, '341x454': 1, '676x1200': 1, '565x374': 1, '525x699': 1, '640x480': 1, '374x350': 1, '194x350': 1, '1500x2000': 1, '2128x1500': 1, '1024x416': 1, '1000x442': 1, '500x889': 1, '672x832': 1, '751x1001': 1, '600x1067': 1, '800x776': 1, '1024x758': 1, '1500x657': 1, '1000x563': 1, '3456x5184': 1, '600x887': 1, '401x341': 1, '891x573': 1, '4000x3000': 1, '4608x3456': 3, '365x335': 1, '477x206': 1, '472x480': 1, '575x431': 1, '500x500': 1}
+Common_Rust:
+  Formats: {'JPEG': 1302, 'PNG': 3, 'MPO': 1}
+  Dimensions: {'185x500': 1, '640x480': 2, '256x256': 1192, '1024x608': 1, '1022x1024': 1, '4032x3024': 1, '1280x1280': 1, '300x300': 1, '3264x2448': 4, '800x600': 1, '1280x960': 1, '450x338': 2, '500x375': 2, '1024x768': 5, '700x482': 1, '575x188': 1, '754x482': 1, '1054x702': 1, '1338x357': 1, '600x450': 1, '1836x3264': 1, '1410x730': 1, '576x1024': 2, '392x236': 1, '273x400': 1, '675x1200': 1, '674x510': 1, '489x1018': 1, '2273x1901': 1, '471x628': 1, '1920x1440': 1, '292x116': 1, '2848x4272': 1, '666x443': 1, '1790x1897': 1, '765x325': 1, '765x257': 1, '600x340': 1, '612x501': 1, '694x583': 1, '900x595': 1, '900x675': 1, '350x263': 1, '640x428': 1, '768x1024': 1, '2048x1536': 2, '810x1038': 1, '1218x569': 1, '590x393': 1, '300x200': 2, '2592x1728': 2, '1000x573': 1, '748x540': 1, '375x255': 1, '774x528': 1, '1278x958': 1, '300x225': 1, '432x287': 1, '672x832': 1, '1500x1125': 1, '960x720': 1, '750x350': 5, '400x268': 1, '1440x2560': 1, '432x268': 1, '388x257': 1, '400x272': 1, '400x263': 1, '300x386': 1, '313x386': 1, '1000x750': 1, '1200x900': 2, '1333x1000': 2, '432x252': 1, '480x360': 1, '563x1122': 1, '412x305': 1, '378x308': 1, '1080x660': 1, '862x882': 1, '350x466': 1, '432x309': 1, '507x297': 1, '417x275': 1, '2761x2027': 1, '1176x781': 1, '1712x1368': 1, '900x849': 1, '310x179': 1, '309x194': 1, '320x240': 1, '580x662': 1, '288x419': 1, '2048x1152': 1, '613x700': 1}
+Gray_Leaf_Spot:
+  Formats: {'PNG': 1, 'JPEG': 573}
+  Dimensions: {'525x395': 1, '743x1591': 1, '256x256': 513, '350x299': 1, '1224x1632': 1, '900x675': 1, '1275x960': 1, '313x213': 1, '700x394': 2, '660x276': 1, '672x832': 1, '299x371': 1, '300x225': 1, '690x345': 1, '852x639': 1, '1080x614': 1, '242x195': 1, '300x191': 1, '200x590': 1, '300x236': 1, '267x350': 1, '430x359': 1, '298x372': 1, '482x378': 1, '400x267': 1, '349x540': 1, '1500x1048': 1, '550x413': 2, '616x331': 1, '550x362': 1, '508x337': 1, '400x487': 1, '432x679': 1, '432x329': 1, '432x324': 2, '5184x3456': 1, '432x273': 1, '1368x840': 1, '227x300': 1, '778x437': 1, '651x488': 1, '640x480': 1, '1200x630': 2, '3264x2448': 2, '350x260': 1, '480x320': 3, '1024x681': 1, '390x259': 1, '360x242': 1, '350x230': 1, '420x378': 1, '320x228': 1, '527x433': 1, '432x271': 1, '1600x1200': 1}
+Healthy:
+  Formats: {'JPEG': 1162}
+  Dimensions: {'256x256': 1162}
+
+Generated outputs
+-----------------
+Class distribution CSV: C:\Users\ADMIN\Desktop\major_project\outputs\class_distribution.csv
+Class distribution chart: C:\Users\ADMIN\Desktop\major_project\outputs\class_distribution.png
+Image sample contact sheet: C:\Users\ADMIN\Desktop\major_project\outputs\image_samples.png
+
+Issues to resolve before training
+----------------------------------
+- The requested datasets/maize_disease path is absent; the inspection used the existing datasets/archive (3)/data path. Confirm this is the intended dataset.
+- No train/validation/test splits are present; a leakage-aware split must be planned.
+- 2 duplicate image group(s) occur across different class labels; review these potentially conflicting labels and keep duplicates out of separate data splits.
+- The meaning of the 'Blight' label is not proven by this inspection; verify it against authoritative dataset metadata before making a disease-specific claim.

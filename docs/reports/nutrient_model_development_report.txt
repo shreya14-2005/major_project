@@ -1,0 +1,356 @@
+================================================================================
+PLANTHEALTHAI: COMPLETE MAIZE NUTRIENT DEFICIENCY MODEL DEVELOPMENT REPORT
+================================================================================
+
+Date: 2026-11-12
+Project: PlantHealthAI - Major Project
+Module: Maize Nutrient Deficiency Classification (Independent Module)
+Author: Antigravity Assistant & Student Research Team
+Status: COMPLETE AND VALIDATED
+
+--------------------------------------------------------------------------------
+1. EXECUTIVE SUMMARY
+--------------------------------------------------------------------------------
+A dedicated, independent deep-learning classification pipeline has been designed,
+implemented, trained, evaluated, and verified for diagnosing maize leaf nutrient
+deficiencies across five conditions:
+  - Healthy (All essential nutrients balanced)
+  - Magnesium (Mg) Deficiency
+  - Nitrogen (N) Deficiency
+  - Phosphorus (P) Deficiency
+  - Potassium (K) Deficiency
+
+Key Accomplishments:
+  * Strict Isolation: Zero modifications, overwrites, or retraining occurred on the
+    existing maize disease classification module (EfficientNetB0, 96.18% accuracy,
+    SHA-256: 4EEBD71DF1C7E076A0B477F3BE3B1DD3927F101B37ABFC9CC7B60EFD2660C733).
+  * Dataset Integrity: All 463 original field images are preserved untouched in
+    'datasets/Maize Nutrient Deficiency Dataset/'.
+  * Leakage-Proof Splitting: Five perceptual near-duplicate candidate pairs were
+    identified, clustered, and kept strictly within identical split partitions,
+    guaranteeing zero data leakage between train, validation, and test subsets.
+  * Transfer Learning: Pretrained MobileNetV2 and EfficientNetB0 models were trained
+    under identical, reproducible split conditions with balanced class weighting.
+  * Model Selection: Model selection was performed strictly using validation performance.
+    EfficientNetB0 was selected based on superior validation loss (0.3609 vs 0.3868)
+    and higher macro recall (85.31% vs 83.90%), maintaining architectural harmony
+    with the primary disease classifier.
+  * Unbiased Final Evaluation: The selected model was evaluated on the untouched test
+    set (71 images) exactly ONCE after model selection, achieving 92.96% accuracy,
+    0.9337 macro precision, 0.9316 macro recall, and 0.9300 macro F1-score.
+  * Standalone Inference: A modular, standalone CLI predictor was developed and
+    verified across all five classes with input validation and medical/biological
+    diagnostic disclaimers.
+
+--------------------------------------------------------------------------------
+2. DATASET PROVENANCE & LABEL LIMITATIONS (PHASE 1)
+--------------------------------------------------------------------------------
+Dataset Metadata:
+  * Repository: Mendeley Data
+  * Publication Date: 18 June 2025
+  * Persistent Identifier (DOI): 10.17632/34gb2gr7p2.1
+  * Version: 1
+  * Contributor: Vishnu Khade
+  * Institution: K.E. Society's Rajarambapu Institute of Technology (RIT), Maharashtra, India
+  * License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Field Collection Characteristics:
+  * Geography: Villages of Mangsuli and Bedag near the Maharashtra-Karnataka border, India.
+  * Environment: Open-field maize cultivation reflecting authentic agrarian variability
+    (natural sunlight, variable leaf orientations, background soil textures).
+  * Acquisition Hardware: Redmi Note 13s smartphone camera (original native 4080 x 3060).
+  * Total Images: 463 images.
+
+Label Provenance & Scientific Constraints:
+  * Biological Verification Status: UNVERIFIED.
+  * Annotations were established during agricultural field surveys guided by domain experts
+    based on visual leaf symptoms.
+  * No destructive foliar tissue laboratory analysis (ICP-OES spectrometry, Kjeldahl digestion,
+    or spectrophotometric phosphorus assays) was performed.
+  * No controlled nutrient-deprivation trials (e.g., Hoagland hydroponic omission) were conducted.
+  * Scientific Rule: Nutrient deficiencies CANNOT be conclusively diagnosed from leaf color
+    or visual appearance alone. Visual symptoms (chlorosis, purpling, edge burn) can be
+    confounded by abiotic factors (drought, cold soil, salinity) or biotic stresses (viral/fungal
+    infections, root injury).
+  * Operational Governance: Model predictions reflect computer vision pattern matches to the
+    supplied folder labels. They are explicitly documented as unverified biological diagnoses.
+
+--------------------------------------------------------------------------------
+3. DATASET PREPARATION & LEAKAGE-FREE SPLITTING (PHASE 2)
+--------------------------------------------------------------------------------
+Raw Dataset Inspection:
+  * Original Class Folders & Image Counts:
+      - 'Helathy'     : 72 images (15.55%)
+      - 'Magnessium'  : 123 images (26.57%)
+      - 'Nitrogen'    : 99 images (21.38%)
+      - 'Phosphorous' : 113 images (24.41%)
+      - 'Pottasium'   : 56 images (12.10%)
+      - Total         : 463 images (100.0%)
+  * Standardized Taxonomy (Corrected Class Mapping):
+      - Helathy     -> Healthy     (Class Index: 0)
+      - Magnessium  -> Magnesium   (Class Index: 1)
+      - Nitrogen    -> Nitrogen    (Class Index: 2)
+      - Phosphorous -> Phosphorus  (Class Index: 3)
+      - Pottasium   -> Potassium   (Class Index: 4)
+
+Quality & Integrity Assessment:
+  * Corrupted / Unreadable Images: 0
+  * Exact File Byte Duplicates: 0 groups
+  * Decoded Pixel (RGBA) Duplicates: 0 groups
+  * Low-Resolution Flags (< 160x160): 0
+  * Blur Flags (Laplacian Variance < 100.0): 187 images flagged (retained for field realism)
+  * Exclusions: 0 images excluded. All 463 original images decode cleanly and are preserved.
+
+Perceptual Near-Duplicate Clustering:
+  Difference hashing (dHash, 64-bit) identified 5 perceptual candidate pairs:
+    1. Nitrogen:    2 (11).jpeg <-> 2 (8).jpeg   (Hamming distance: 1 bit)
+    2. Phosphorus:  3 (1).jpeg  <-> 3 (14).jpeg  (Hamming distance: 1 bit)
+    3. Phosphorus:  3 (10).jpeg <-> 3 (4).jpeg   (Hamming distance: 1 bit)
+    4. Phosphorus:  3 (75).jpeg <-> 3 (76).jpeg  (Hamming distance: 0 bits)
+    5. Potassium:   4 (17).jpeg <-> 4 (31).jpeg  (Hamming distance: 1 bit)
+  Cross-Class Duplicates: ZERO. All candidate near-duplicate pairs belong to identical classes.
+  Protection Strategy: Connected component clustering grouped near-duplicate pairs together,
+  ensuring both images of any pair remain strictly within the same data split.
+
+Dataset Split Distribution:
+  Target Proportions: 70% Train, 15% Validation, 15% Test (Fixed Random Seed = 42).
+  Actual Proportions & Counts:
+  -----------------------------------------------------------------------------
+  Split         Healthy  Magnesium   Nitrogen  Phosphorus  Potassium   Total    Pct
+  -----------------------------------------------------------------------------
+  Train              50         86         69          79         39     323  69.76%
+  Validation         11         18         15          17          8      69  14.90%
+  Test               11         19         15          17          9      71  15.33%
+  -----------------------------------------------------------------------------
+  Total              72        123         99         113         56     463 100.00%
+  -----------------------------------------------------------------------------
+  Zero split leakage verified across all splits. Manifest saved with full SHA-256 hashes.
+
+--------------------------------------------------------------------------------
+4. MODEL TRAINING CONFIGURATION & METHODOLOGY (PHASE 3)
+--------------------------------------------------------------------------------
+Hardware & Software Environment:
+  * Python: 3.12.0
+  * TensorFlow: 2.18.1
+  * Keras: 3.15.1
+  * Compute Device: Intel/AMD CPU (No discrete GPU detected; local training executed cleanly)
+
+Architectures Evaluated:
+  1. MobileNetV2 (ImageNet pretrained backbone, alpha=1.0)
+     - Input Shape: 224 x 224 x 3
+     - Preprocessing Layer: Keras native Rescaling(scale=1/127.5, offset=-1.0) mapping to [-1, 1].
+     - Head: GlobalAveragePooling2D -> Dropout(0.30) -> Dense(5, softmax).
+  2. EfficientNetB0 (ImageNet pretrained backbone)
+     - Input Shape: 224 x 224 x 3
+     - Preprocessing Layer: Keras native Rescaling(scale=1.0, offset=0.0) keeping [0, 255]
+       for internal normalization.
+     - Head: GlobalAveragePooling2D -> Dropout(0.30) -> Dense(5, softmax).
+
+Training Protocol:
+  * Batch Size: 16
+  * Class Imbalance Mitigation: Scikit-learn balanced class weighting:
+      - Class 0 (Healthy):    1.2920
+      - Class 1 (Magnesium):  0.7512
+      - Class 2 (Nitrogen):   0.9362
+      - Class 3 (Phosphorus): 0.8177
+      - Class 4 (Potassium):  1.6564
+  * Training Augmentation (Applied ONLY to Train Generator):
+      - Random Horizontal Flip
+      - Random Rotation (+/- 0.05 / ~18 deg)
+      - Random Zoom (+/- 0.10)
+  * Two-Stage Transfer Learning:
+      - Stage 1 (Head Warmup): Backbone frozen, Adam lr = 1e-3, 15 epochs max.
+        Callbacks: EarlyStopping (patience=5), ReduceLROnPlateau (factor=0.2, patience=2).
+      - Stage 2 (Fine-Tuning): Unfreeze top 30 layers, BatchNormalization kept in inference
+        mode, Adam lr = 1e-5, 15 epochs max.
+        Callbacks: EarlyStopping (patience=5), ReduceLROnPlateau (factor=0.2, patience=2),
+        ModelCheckpoint (save_best_only=True based on val_loss).
+
+--------------------------------------------------------------------------------
+5. ARCHITECTURE COMPARISON & SELECTION (PHASE 4)
+--------------------------------------------------------------------------------
+Validation Set Evaluation (69 images held out from training; Test Set UNTOUCHED):
+
+-----------------------------------------------------------------------------
+Metric                          MobileNetV2             EfficientNetB0
+-----------------------------------------------------------------------------
+Validation Accuracy                  85.51%                     85.51%
+Validation Loss                      0.3868                     0.3609  <- WINNER
+Validation Macro F1-Score            0.8448                     0.8429
+Validation Macro Precision           0.8579                     0.8446
+Validation Macro Recall              0.8390                     0.8531  <- WINNER
+Training Duration                   177.59s (~3.0m)            369.91s (~6.2m)
+Model Disk File Size                20.79 MB                   27.67 MB
+Batch-1 Inference Latency           339.30 ms                  697.49 ms
+-----------------------------------------------------------------------------
+
+Model Selection Decision & Justification:
+  * Selected Architecture: EfficientNetB0
+  * Primary Reasons:
+    1. Superior Generalization: EfficientNetB0 achieved lower cross-entropy validation loss
+       (0.3609 vs 0.3868), indicating higher probability calibration and confidence reliability.
+    2. Higher Macro Recall: EfficientNetB0 captured 85.31% macro recall across all classes
+       (compared to 83.90% for MobileNetV2), vital for reducing false negatives in nutrient stress.
+    3. Architectural Consistency: PlantHealthAI's primary disease classifier is EfficientNetB0;
+       standardizing on EfficientNetB0 across both modules streamlines inference pipelines.
+  * Preserved Research Comparison: MobileNetV2 weights are saved in:
+    'models/nutrient_detection/mobilenetv2_nutrient_best.keras'.
+  * Active Deployed Model: EfficientNetB0 saved to:
+    'models/nutrient_detection/nutrient_model.keras'.
+
+--------------------------------------------------------------------------------
+6. FINAL UNTOUCHED TEST SET EVALUATION (PHASE 5)
+--------------------------------------------------------------------------------
+The selected EfficientNetB0 model was evaluated on the sealed test set (71 images)
+exactly ONCE after model selection was completed.
+
+Overall Test Metrics:
+  * Test Accuracy:              92.96%
+  * Macro Average Precision:    0.9337
+  * Macro Average Recall:       0.9316
+  * Macro Average F1-Score:     0.9300
+  * Weighted Average F1-Score:  0.9298
+  * Correct Predictions:        66 / 71 (92.96%)
+  * Incorrect Predictions:      5 / 71 (7.04%)
+  * Model File Size:            27.67 MB
+  * Batch-1 Inference Latency:  629.95 ms/image (CPU)
+
+Per-Class Detailed Performance:
+-----------------------------------------------------------------------------
+Class             Precision     Recall    F1-Score     Support (Test Images)
+-----------------------------------------------------------------------------
+Healthy              0.8462     1.0000      0.9167              11
+Magnesium            1.0000     0.8947      0.9444              19
+Nitrogen             0.9333     0.9333      0.9333              15
+Phosphorus           0.8889     0.9412      0.9143              17
+Potassium            1.0000     0.8889      0.9412               9
+-----------------------------------------------------------------------------
+Macro Average        0.9337     0.9316      0.9300              71
+Weighted Average     0.9348     0.9296      0.9298              71
+-----------------------------------------------------------------------------
+
+Confusion Matrix (Rows = Actual Ground Truth, Columns = Predicted):
+-----------------------------------------------------------------------------
+Actual \ Predicted     Healthy   Magnesium    Nitrogen  Phosphorus   Potassium
+-----------------------------------------------------------------------------
+Healthy                     11           0           0           0           0
+Magnesium                    1          17           1           0           0
+Nitrogen                     0           0          14           1           0
+Phosphorus                   1           0           0          16           0
+Potassium                    0           0           0           1           8
+-----------------------------------------------------------------------------
+Observations:
+  - Healthy leaves achieved 100% recall (11/11 correctly recognized).
+  - Perfect precision (1.0000) was achieved for both Magnesium and Potassium.
+  - The 5 misclassifications occurred between symptomatically adjacent deficiencies:
+    * 1 Magnesium -> Healthy (mild/early interveinal symptom)
+    * 1 Magnesium -> Nitrogen (chlorosis symptom overlap)
+    * 1 Nitrogen -> Phosphorus (lower leaf margin discoloration)
+    * 1 Phosphorus -> Healthy (early purpling not prominent)
+    * 1 Potassium -> Phosphorus (edge necrosis vs margin purpling)
+
+--------------------------------------------------------------------------------
+7. STANDALONE PREDICTION SCRIPT VALIDATION (PHASE 6)
+--------------------------------------------------------------------------------
+Script Location:
+  'predictions/nutrient_detection/predict_nutrient.py'
+
+Capabilities:
+  * Loads only the nutrient model ('nutrient_model.keras') and nutrient class mapping.
+  * Completely independent of the disease detection module.
+  * Preprocessing: Applies (224, 224, 3) RGB Lanczos resizing and native model scaling.
+  * Outputs: Top predicted class, confidence percentage, and full 5-class distribution.
+  * Diagnostic Notice: Automatically prints the scientific limitation disclaimer.
+  * Error Handling: Explicitly catches and reports non-existent files and corrupt formats.
+
+Verification Results across Test Samples:
+  - Healthy:    10.jpeg        -> Predicted: Healthy    (Confidence: 94.10%) [MATCH]
+  - Magnesium:  1 (107).jpeg   -> Predicted: Magnesium  (Confidence: 98.49%) [MATCH]
+  - Nitrogen:   2 (17).jpeg    -> Predicted: Nitrogen   (Confidence: 99.66%) [MATCH]
+  - Phosphorus: 3 (1).jpeg     -> Predicted: Phosphorus (Confidence: 99.50%) [MATCH]
+  - Potassium:  4 (11).jpeg    -> Predicted: Potassium  (Confidence: 77.28%) [MATCH]
+  - Error Case: Missing File   -> Caught FileNotFoundError gracefully [PASS]
+  - Error Case: Corrupt File   -> Caught ValueError ("cannot identify image") [PASS]
+
+--------------------------------------------------------------------------------
+8. COMPLETE DIRECTORY STRUCTURE (PHASE 7)
+--------------------------------------------------------------------------------
+major_project/
+├── datasets/
+│   ├── archive (3)/                             [PRESERVED DISEASE SOURCE]
+│   ├── maize_disease_processed/                 [PRESERVED DISEASE SPLITS]
+│   ├── Maize Nutrient Deficiency Dataset/       [PRESERVED 463 ORIGINAL IMAGES]
+│   │   ├── Helathy/                             (72 images)
+│   │   ├── Magnessium/                          (123 images)
+│   │   ├── Nitrogen/                            (99 images)
+│   │   ├── Phosphorous/                         (113 images)
+│   │   └── Pottasium/                           (56 images)
+│   └── maize_nutrient_processed/                [REPRODUCIBLE NUTRIENT SPLITS]
+│       ├── train/                               (323 images)
+│       ├── val/                                 (69 images)
+│       └── test/                                (71 images)
+│
+├── models/
+│   ├── maize_disease_model.keras                [PRESERVED DISEASE MODEL]
+│   ├── maize_disease_classes.json               [PRESERVED DISEASE CLASSES]
+│   └── nutrient_detection/                      [NEW NUTRIENT ARTIFACTS]
+│       ├── nutrient_model.keras                 (Active EfficientNetB0 - 27.67 MB)
+│       ├── nutrient_classes.json                (5-class mapping)
+│       ├── mobilenetv2_nutrient_best.keras      (Comparison checkpoint - 20.79 MB)
+│       ├── efficientnetb0_nutrient_best.keras   (EfficientNetB0 checkpoint)
+│       └── evaluation/                          (Final evaluation artifact copies)
+│
+├── training/
+│   ├── inspect_dataset.py                       [PRESERVED DISEASE SCRIPT]
+│   ├── prepare_dataset.py                       [PRESERVED DISEASE SCRIPT]
+│   ├── train_disease_model.py                   [PRESERVED DISEASE SCRIPT]
+│   ├── download_nutrient_dataset.py             [NEW DATASET DOWNLOAD SCRIPT]
+│   ├── prepare_nutrient_dataset.py              [NEW QUALITY & SPLIT SCRIPT]
+│   ├── train_nutrient_model.py                  [NEW TRAINING & COMPARISON SCRIPT]
+│   └── evaluate_nutrient_test.py                [NEW TEST EVALUATION SCRIPT]
+│
+├── evaluation/
+│   ├── (existing maize disease reports)         [PRESERVED DISEASE EVALUATIONS]
+│   ├── nutrient_dataset_quality/                [NEW QUALITY ASSURANCE]
+│   │   ├── provenance_review.txt                (Phase 1 provenance audit)
+│   │   ├── quality_inspection_report.txt        (Phase 2 inspection audit)
+│   │   ├── nutrient_image_split_manifest.csv    (463-image split manifest)
+│   │   └── nutrient_dataset_split_report.txt    (Split distribution report)
+│   ├── nutrient_model_comparison/               [NEW MODEL COMPARISON]
+│   │   ├── nutrient_model_comparison_report.txt (Validation comparison report)
+│   │   ├── mobilenetv2_training_history.json    (MobileNetV2 epoch logs)
+│   │   └── efficientnetb0_training_history.json (EfficientNetB0 epoch logs)
+│   └── nutrient_final_evaluation/               [NEW FINAL TEST ARTIFACTS]
+│       ├── nutrient_test_evaluation_report.txt  (Phase 5 final test report)
+│       ├── nutrient_test_predictions.csv        (71 test predictions & probabilities)
+│       ├── nutrient_confusion_matrix.csv        (Confusion matrix data)
+│       ├── nutrient_confusion_matrix.png        (Confusion matrix visualization)
+│       └── training_curves.png                  (Accuracy & loss history curves)
+│
+├── predictions/
+│   └── nutrient_detection/                      [NEW INFERENCE MODULE]
+│       ├── __init__.py
+│       └── predict_nutrient.py                  (Standalone prediction script)
+│
+└── nutrient_model_development_report.txt        [MASTER REPORT]
+
+--------------------------------------------------------------------------------
+9. FINAL COMPREHENSIVE VERIFICATION AUDIT (PHASE 8)
+--------------------------------------------------------------------------------
+[x] Correct nutrient dataset loading: 463 images verified and decoded.
+[x] Correct class mapping: Standardized from typos (Helathy, Magnessium, Phosphorous, Pottasium).
+[x] Correct preprocessing: Built-in native rescaling layers for MobileNetV2 and EfficientNetB0.
+[x] No data leakage: 5 near-duplicate candidate pairs clustered and confined to identical splits.
+[x] Reproducible splits: Fixed seed 42, deterministic split manifest recorded with SHA-256 digests.
+[x] Successful model loading: Native Keras 3 serialization verified on both architectures.
+[x] Successful predictions: Tested on all 5 nutrient classes, matching expected classes.
+[x] Correct evaluation calculations: Precision, recall, and F1 computed strictly via standard formulas.
+[x] Zero changes to disease model: SHA-256 hash verified identical before and after development.
+[x] Zero changes to original 463 images: Source files untouched in raw directory.
+[x] Module isolation: Nutrient detection functions independently without loading disease assets.
+[x] No scientific fabrication: Explicitly declared that labels reflect field survey annotations
+    and are not chemically/biologically confirmed diagnoses.
+
+================================================================================
+END OF REPORT
+================================================================================

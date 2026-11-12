@@ -1,0 +1,62 @@
+﻿# ==============================
+# Python
+# ==============================
+__pycache__/
+*.py[cod]
+*.pyd
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# ==============================
+# React / Node / Vite
+# ==============================
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# ==============================
+# Build and generated files
+# ==============================
+backend/.dist/
+*.log
+logs/
+
+# ==============================
+# Environment and secrets
+# ==============================
+.env
+.env.*
+!.env.example
+
+# ==============================
+# IDE and operating system
+# ==============================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==============================
+# Temporary files
+# ==============================
+*.tmp
+*.bak
+*.swp
+
+# Large original datasets
+backend/datasets/
+
+# Generated visualizations and temporary outputs
+backend/outputs/
+backend/models/.maize_training_*/

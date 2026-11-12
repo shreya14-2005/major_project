@@ -1,0 +1,45 @@
+MAIZE DISEASE GRAD-CAM / GRAD-CAM++ COMPARISON
+=================================================
+
+Analysis date: 2026-10-31T23:25:56+05:30
+Model: models/maize_disease_model.keras (inference only; weights unchanged)
+Input: RGB, 224 x 224, using the existing Grad-CAM training-matched preprocessing and embedded MobileNetV2 rescaling.
+Target final convolution: Conv_1; activation map: out_relu.
+Image selection source: outputs/gradcam/gradcam_report.csv
+
+Image and heatmap counts
+------------------------
+Images selected from existing Grad-CAM run: 24
+Images successfully processed by both methods: 24
+Images with failed or non-comparable heatmaps: 0
+correct_predictions: 4 selected, 4 successfully compared
+blight_to_gray_leaf_spot: 13 selected, 13 successfully compared
+gray_leaf_spot_to_blight: 7 selected, 7 successfully compared
+Failed images: none.
+
+Observed map differences
+------------------------
+Mean Pearson correlation between normalized resized maps: 0.5712 (n=24; constant-map cases excluded)
+Mean absolute difference between normalized resized maps: 0.1941 (n=24)
+These values summarize spatial differences only; they do not measure explanation correctness or establish that either method is superior.
+
+Method details
+--------------
+Grad-CAM uses the spatial average of first-order class-score gradients as channel weights.
+Grad-CAM++ uses gradient-power alpha weights (squared gradients in the numerator and squared/cubed-gradient terms in the denominator), then combines positive gradients with feature-map activations.
+Both methods target the model's predicted class and use the same normalized 7x7 activation maps, OpenCV JET color scale, original image, and 0.45 overlay opacity.
+
+Limitations
+-----------
+Both methods are approximate class-activation explanations. Heatmaps do not prove a prediction is correct, identify a disease cause, or establish causal feature importance.
+The final feature map is only 7x7 before resizing, so displayed regions have limited spatial detail.
+Grad-CAM++'s gradient-power weighting is a local attribution heuristic; map detail or concentration alone is not evidence of better explanations.
+This comparison reuses the same model and the exact image filenames from the existing Grad-CAM report; it does not retrain or alter the test split.
+
+Output folders
+---------------
+outputs/gradcam_plus_plus/correct_predictions/
+outputs/gradcam_plus_plus/blight_to_gray_leaf_spot/
+outputs/gradcam_plus_plus/gray_leaf_spot_to_blight/
+outputs/gradcam_plus_plus/comparison/
+Per-image report: outputs/gradcam_plus_plus/gradcam_plus_plus_report.csv

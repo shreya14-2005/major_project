@@ -1,0 +1,67 @@
+MAIZE DISEASE TEST MISCLASSIFICATION ANALYSIS
+===============================================
+
+Analysis date: 2026-10-31T22:57:31+05:30
+Saved model: models\maize_disease_model.keras
+Test images were read only; model weights and dataset files were not changed.
+No training, test-set tuning, or Grad-CAM analysis was performed.
+Test images evaluated: 628
+Incorrectly classified images: 30
+Correctly classified images: 598
+
+Metrics recomputed from these predictions
+------------------------------------------
+Accuracy: 0.9522
+Macro precision: 0.9383
+Macro recall: 0.9429
+Macro F1-score: 0.9405
+
+Class-wise classification report
+---------------------------------
+                precision    recall  f1-score   support
+
+        Blight     0.9294    0.9186    0.9240       172
+   Common_Rust     0.9794    0.9694    0.9744       196
+Gray_Leaf_Spot     0.8444    0.8837    0.8636        86
+       Healthy     1.0000    1.0000    1.0000       174
+
+      accuracy                         0.9522       628
+     macro avg     0.9383    0.9429    0.9405       628
+  weighted avg     0.9529    0.9522    0.9525       628
+
+Misclassifications grouped by actual and predicted class
+--------------------------------------------------------
+Blight -> Common_Rust: 1
+Blight -> Gray_Leaf_Spot: 13
+Common_Rust -> Blight: 5
+Common_Rust -> Gray_Leaf_Spot: 1
+Gray_Leaf_Spot -> Blight: 7
+Gray_Leaf_Spot -> Common_Rust: 3
+
+Blight and Gray_Leaf_Spot confusion
+------------------------------------
+Blight misclassified as Gray_Leaf_Spot: 13
+Gray_Leaf_Spot misclassified as Blight: 7
+Total errors between these two classes: 20
+Blight -> Gray_Leaf_Spot rate among actual Blight images: 7.56%
+Gray_Leaf_Spot -> Blight rate among actual Gray_Leaf_Spot images: 8.14%
+
+Comparison with the original test evaluation
+---------------------------------------------
+Accuracy: original 0.9522, new 0.9522 (matches to 4 decimals)
+Macro precision: original 0.9383, new 0.9383 (matches to 4 decimals)
+Macro recall: original 0.9429, new 0.9429 (matches to 4 decimals)
+Macro F1-score: original 0.9405, new 0.9405 (matches to 4 decimals)
+Confusion matrix: identical to original.
+Overall comparison: no differences detected to the precision available in the original report.
+
+Interpretation limits
+---------------------
+This analysis reports observed prediction errors only. It does not infer their visual, biological, or dataset-related causes.
+
+Confusion matrix (rows are actual; columns are predicted)
+----------------------------------------------------------
+Blight: [158, 1, 13, 0]
+Common_Rust: [5, 190, 1, 0]
+Gray_Leaf_Spot: [7, 3, 76, 0]
+Healthy: [0, 0, 0, 174]

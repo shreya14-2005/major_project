@@ -1,0 +1,33 @@
+MAIZE NUTRIENT DEFICIENCY DATASET: QUALITY INSPECTION REPORT
+=============================================================
+
+Inspection Date: 2026-11-12T12:25:01+05:30
+Dataset Location: C:\Users\chait\Downloads\major_project\major_project\datasets\Maize Nutrient Deficiency Dataset
+Total Images Inspected: 463
+Corrupted / Unreadable Images: 0
+
+Original Class Distribution:
+  - Helathy -> Healthy: 72 images (15.55%)
+  - Magnessium -> Magnesium: 123 images (26.57%)
+  - Nitrogen -> Nitrogen: 99 images (21.38%)
+  - Phosphorous -> Phosphorus: 113 images (24.41%)
+  - Pottasium -> Potassium: 56 images (12.10%)
+
+Exact File Byte Duplicates: 0 groups
+Decoded RGBA Pixel Duplicates: 0 groups
+Perceptual Near-Duplicate Candidate Pairs (dHash dist <= 2): 5 pairs
+  * [1 bit diff] Nitrogen/2 (11).jpeg <-> Nitrogen/2 (8).jpeg
+  * [1 bit diff] Phosphorous/3 (1).jpeg <-> Phosphorous/3 (14).jpeg
+  * [1 bit diff] Phosphorous/3 (10).jpeg <-> Phosphorous/3 (4).jpeg
+  * [0 bit diff] Phosphorous/3 (75).jpeg <-> Phosphorous/3 (76).jpeg
+  * [1 bit diff] Pottasium/4 (17).jpeg <-> Pottasium/4 (31).jpeg
+
+Quality Flags:
+  - Low Resolution (< 160x160): 0 images flagged
+  - Possible Blur (Laplacian variance < 100.0): 187 images flagged
+Exclusion Decision:
+  - Total Excluded: 0 images.
+  - Rationale: All 463 images decode successfully into valid RGB arrays without corrupt headers.
+    Mobile camera field captures naturally exhibit varying depth-of-field blur and lower resolutions;
+    preserving these reflections of real agrarian conditions maximizes generalization and robustness.
+    Zero original images were altered, renamed, or deleted in the source directory.

@@ -1,0 +1,62 @@
+MAIZE NUTRIENT DEFICIENCY DATASET: PROVENANCE AND LABEL REVIEW
+================================================================
+
+1. Dataset Identification and Repository Metadata
+--------------------------------------------------
+- Dataset Title: Maize Nutrient Deficiency Dataset
+- Repository Platform: Mendeley Data
+- Publication Date: 18 June 2025
+- Digital Object Identifier (DOI): 10.17632/34gb2gr7p2.1
+- Version: 1
+- Contributor / Author: Vishnu Khade
+- Associated Institution: Kasegaon Education Society's Rajarambapu Institute of Technology (RIT), Rajaramnagar, Maharashtra, India
+- License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+- Repository URL: https://data.mendeley.com/datasets/34gb2gr7p2/1
+
+2. Geographical Sourcing and Capture Characteristics
+----------------------------------------------------
+- Field Survey Locations: Villages of Mangsuli and Bedag, situated near the border region of Maharashtra and Karnataka states, India.
+- Crop Species: Maize (Zea mays L.)
+- Field Environment: Authentic agrarian open-field cultivation subject to natural microclimatic variations, ambient sunlight, soil heterogeneity, and field stressors (not controlled greenhouse hydroponic plots).
+- Hardware Specifications: Redmi Note 13s smartphone camera module.
+- Native Sensor Dimensions: 4080 x 3060 pixels (4:3 aspect ratio).
+- Formats in Repository: JPEG format.
+- Total Images in Dataset: 463 images.
+
+3. Class Folders and Label Taxonomy
+-----------------------------------
+Original class folder naming as supplied in the source distribution:
+  1. 'Helathy'     : 72 images (15.55%)
+  2. 'Magnessium'  : 123 images (26.57%)
+  3. 'Nitrogen'    : 99 images (21.38%)
+  4. 'Phosphorous' : 113 images (24.41%)
+  5. 'Pottasium'   : 56 images (12.10%)
+
+Standardized Nomenclature (Corrected Class Mapping):
+  - Helathy     -> Healthy
+  - Magnessium  -> Magnesium
+  - Nitrogen    -> Nitrogen
+  - Phosphorous -> Phosphorus
+  - Pottasium   -> Potassium
+
+4. Scientific Evaluation of Label Verification Status
+-----------------------------------------------------
+- Biological Nutrient Label Status: UNVERIFIED.
+- Basis of Annotation: The dataset contributor states that the photographs were "taken during field surveys led by domain experts". Annotations were assigned based on visual observation of leaf symptoms in the field.
+- Absence of Laboratory Tissue Analysis: No records exist indicating destructive laboratory foliar testing—such as Inductively Coupled Plasma Optical Emission Spectrometry (ICP-OES) for mineral micronutrients/secondary nutrients, Kjeldahl digestion for total nitrogen, or spectrophotometric phosphomolybdate assays for phosphorus.
+- Absence of Controlled Deprivation Trials: The plants were not grown under nutrient-controlled nutrient solution cultures (e.g., Hoagland solution minus N, P, K, or Mg) where symptoms could be definitively tied to single nutrient omissions.
+- Absence of Soil Analysis Records: No corresponding soil test logs (cation exchange capacity, available nitrogen, Bray-P/Olsen-P, exchangeable potassium, or soil pH) are attached to individual image entries.
+
+5. Risk of Color/Symptom Confounding
+------------------------------------
+- Symptom Overlap: Chlorosis (yellowing), purpling (anthocyanin accumulation), marginal necrosis, and stunted leaf margins are physiological stress responses that can be triggered by multiple overlapping factors:
+  * Nitrogen vs. Sulfur vs. Water Stress: General leaf yellowing can indicate nitrogen deficiency, sulfur deficiency, root lodging, drought stress, or herbicide injury.
+  * Phosphorus vs. Cold/Genetics: Purpling of leaf margins can arise from phosphorus deficiency, cold soil temperatures inhibiting root nutrient uptake, or normal hybrid-specific anthocyanin expression.
+  * Magnesium vs. Viral/Fungal Interveinal Damage: Interveinal chlorosis on lower leaves is characteristic of magnesium deficiency but can be mimicked by early stages of viral striping or root nematode injury.
+  * Potassium vs. Salinity/Bacterial Edge Burn: Marginal leaf scorching (firing) can be confused with salt toxicity, wind burn, or bacterial leaf scorch.
+- Rule on Leaf Color Inference: Nutrient deficiencies CANNOT and MUST NOT be scientifically inferred from leaf color alone. Visual inspection provides diagnostic cues, but confirmation requires chemical foliar tissue analysis.
+
+6. Operational Constraint and Governance
+----------------------------------------
+- Model Prediction Disclaimer: Any computer vision classifier trained on this dataset predicts the supplied taxonomic folder labels based on visual pattern correlation. The model DOES NOT provide a verified biological diagnosis.
+- Integrity Mandate: Missing provenance or laboratory validation records will not be substituted with claims of scientific proof. Predictions must be explicitly reported as experimental pattern recognitions based on the supplied Mendeley Data field-survey labels.
