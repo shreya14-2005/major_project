@@ -1,0 +1,61 @@
+{
+  "test_image_count": 628,
+  "accuracy": 0.9617834394904459,
+  "precision": 0.9473126533611516,
+  "recall": 0.9574632178452777,
+  "f1_score": 0.9517666289608909,
+  "class_metrics": {
+    "Blight": {
+      "precision": 0.9523809523809523,
+      "recall": 0.9302325581395349,
+      "f1_score": 0.9411764705882352,
+      "support": 172
+    },
+    "Common_Rust": {
+      "precision": 0.9947643979057592,
+      "recall": 0.9693877551020408,
+      "f1_score": 0.9819121447028423,
+      "support": 196
+    },
+    "Gray_Leaf_Spot": {
+      "precision": 0.8421052631578947,
+      "recall": 0.9302325581395349,
+      "f1_score": 0.8839779005524862,
+      "support": 86
+    },
+    "Healthy": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 174
+    }
+  },
+  "confusion_matrix": [
+    [
+      160,
+      1,
+      11,
+      0
+    ],
+    [
+      2,
+      190,
+      4,
+      0
+    ],
+    [
+      6,
+      0,
+      80,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      174
+    ]
+  ],
+  "misclassified_count": 24,
+  "gray_leaf_spot_misclassified": 6
+}

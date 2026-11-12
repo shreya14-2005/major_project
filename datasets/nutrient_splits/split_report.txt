@@ -1,0 +1,27 @@
+NUTRIENT DATASET SPLIT REPORT
+=============================
+Source: C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset
+Manifest directory: C:\Users\ADMIN\Desktop\major_project\datasets\nutrient_splits
+Image total: 463
+Random seed: 42
+Target ratios: train 70%, validation 15%, test 15%
+Images are referenced by absolute path; source images were not copied or modified.
+Related groups use exact byte SHA-256, decoded-pixel SHA-256, and 64-bit DCT pHash with Hamming distance <= 6.
+Near-duplicate candidate pairs: 5
+Multi-image related groups: 5
+Every related group was verified to occur in exactly one split.
+
+Split totals:
+  train: 323
+  val: 71
+  test: 69
+
+Class-wise split counts:
+  Healthy: train=50, val=11, test=11
+  Magnesium: train=86, val=19, test=18
+  Nitrogen: train=69, val=15, test=15
+  Phosphorus: train=79, val=17, test=17
+  Potassium: train=39, val=9, test=8
+
+Labels are the supplied dataset folder labels with spelling-only normalization. They have not been independently scientifically verified.
+No test images or labels were used during split assignment beyond stratified count allocation; model selection must use validation data only.

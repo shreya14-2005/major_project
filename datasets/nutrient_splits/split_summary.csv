@@ -1,0 +1,16 @@
+﻿label,split,image_count,class_total,split_percent_of_class
+Healthy,train,50,72,69.44
+Healthy,val,11,72,15.28
+Healthy,test,11,72,15.28
+Magnesium,train,86,123,69.92
+Magnesium,val,19,123,15.45
+Magnesium,test,18,123,14.63
+Nitrogen,train,69,99,69.70
+Nitrogen,val,15,99,15.15
+Nitrogen,test,15,99,15.15
+Phosphorus,train,79,113,69.91
+Phosphorus,val,17,113,15.04
+Phosphorus,test,17,113,15.04
+Potassium,train,39,56,69.64
+Potassium,val,9,56,16.07
+Potassium,test,8,56,14.29

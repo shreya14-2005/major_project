@@ -1,0 +1,11 @@
+                precision    recall  f1-score   support
+
+        Blight     0.9524    0.9302    0.9412       172
+   Common_Rust     0.9948    0.9694    0.9819       196
+Gray_Leaf_Spot     0.8421    0.9302    0.8840        86
+       Healthy     1.0000    1.0000    1.0000       174
+
+      accuracy                         0.9618       628
+     macro avg     0.9473    0.9575    0.9518       628
+  weighted avg     0.9637    0.9618    0.9624       628
+

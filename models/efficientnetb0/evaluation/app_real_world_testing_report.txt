@@ -1,0 +1,13 @@
+REAL-WORLD IMAGE TESTING
+========================
+Input folder: C:\Users\ADMIN\Desktop\major_project\testing\real_world_images
+This folder is separate from the Kaggle train/validation/test data. No supplied files are copied or modified.
+
+TESTED (no ground-truth label supplied): 0b799242-624f-46fb-acd3-a9352e8b4213___R.S_HL 8216 copy 2.jpg; predicted=Healthy; confidence=0.9999; review=predicted; quality warnings=none; non-maize/OOD status=not assessed
+TESTED (no ground-truth label supplied): 2aca721c-1600-4f8c-8e79-df33973c671c___RS_GLSp 9348.JPG; predicted=Gray_Leaf_Spot; confidence=0.8375; review=predicted; quality warnings=none; non-maize/OOD status=not assessed
+TESTED (no ground-truth label supplied): test2.JPG; predicted=Common_Rust; confidence=0.9999; review=predicted; quality warnings=none; non-maize/OOD status=not assessed
+
+Images tested: 3
+Successfully processed: 3
+Rejected/failed inputs: 0
+Without independent labels, these predictions do not measure real-world accuracy or establish that the image contains maize.

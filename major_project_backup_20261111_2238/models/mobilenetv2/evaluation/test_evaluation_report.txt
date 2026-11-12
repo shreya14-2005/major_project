@@ -1,0 +1,45 @@
+MAIZE DISEASE MODEL TEST EVALUATION
+====================================
+
+Evaluation date: 2026-10-31T22:49:17+05:30
+Selected model phase: fine-tuned MobileNetV2 upper layers
+Validation best loss (frozen base): 0.201962
+Selected model best validation loss: 0.179134
+Test image count: 628
+The test set was evaluated after model selection and was not used for training.
+
+Test metrics (macro average)
+----------------------------
+Accuracy: 0.9522
+Precision: 0.9383
+Recall: 0.9429
+F1-score: 0.9405
+Gray_Leaf_Spot recall: 0.8837
+
+Classification report
+---------------------
+                precision    recall  f1-score   support
+
+        Blight     0.9294    0.9186    0.9240       172
+   Common_Rust     0.9794    0.9694    0.9744       196
+Gray_Leaf_Spot     0.8444    0.8837    0.8636        86
+       Healthy     1.0000    1.0000    1.0000       174
+
+      accuracy                         0.9522       628
+     macro avg     0.9383    0.9429    0.9405       628
+  weighted avg     0.9529    0.9522    0.9525       628
+
+Confusion matrix (rows are actual; columns are predicted)
+----------------------------------------------------------
+Blight: [158, 1, 13, 0]
+Common_Rust: [5, 190, 1, 0]
+Gray_Leaf_Spot: [7, 3, 76, 0]
+Healthy: [0, 0, 0, 174]
+
+Model architecture
+------------------
+Architecture: MobileNetV2 (ImageNet weights, include_top=False)
+Input: 224x224 RGB
+Head: GlobalAveragePooling2D -> Dropout(0.25) -> Dense(4, softmax)
+Training augmentation: horizontal flip, rotation(0.05), zoom(0.1)
+Selected phase: fine-tuned MobileNetV2 upper layers

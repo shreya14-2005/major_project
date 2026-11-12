@@ -1,0 +1,41 @@
+{
+  "architecture": "EfficientNetB0",
+  "tensorflow_version": "2.21.0",
+  "python_version": "3.13.3",
+  "started_at": "2026-11-10T12:32:14+05:30",
+  "finished_at": "2026-11-10T13:31:37+05:30",
+  "training_seconds_including_pretrained_initialization_and_saving": 3562.654475099989,
+  "selected_phase": "frozen EfficientNetB0 base",
+  "selected_validation_best_loss": 0.1699160486459732,
+  "frozen_base_best_validation_loss": 0.1699160486459732,
+  "trainable_parameter_count": 5124,
+  "parameter_count": 4054695,
+  "image_size": [
+    224,
+    224
+  ],
+  "batch_size": 32,
+  "random_seed": 42,
+  "class_weights": {
+    "Blight": 0.9139650872817955,
+    "Common_Rust": 0.8019693654266958,
+    "Gray_Leaf_Spot": 1.8233830845771144,
+    "Healthy": 0.9004914004914005
+  },
+  "training_counts": {
+    "Blight": 802,
+    "Common_Rust": 914,
+    "Gray_Leaf_Spot": 402,
+    "Healthy": 814
+  },
+  "head_max_epochs": 15,
+  "fine_tuning_max_epochs": 8,
+  "fine_tuned_backbone_layers": 30,
+  "batch_normalization_layers_frozen": true,
+  "preprocessing": "Input is raw RGB [0,255]. EfficientNetB0 has an internal Rescaling layer; no external normalization or preprocess_input is applied.",
+  "augmentation": "Random horizontal flip, rotation 0.05, and zoom 0.1 in the model; active during training only.",
+  "training_device": [
+    "/physical_device:CPU:0"
+  ],
+  "test_data_used_for_model_selection": false
+}

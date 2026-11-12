@@ -1,0 +1,127 @@
+FINAL MODEL ORGANIZATION AND VERIFICATION
+=========================================
+
+Backup
+------
+Complete pre-change project backup:
+C:\Users\ADMIN\Desktop\major_project_backup_20261111_2238
+Backup file count: 8,601. Both trained model hashes match the originals.
+
+Files moved
+-----------
+- models/efficientnetb0/explainability/gradcam.py ->
+  explainability/efficientnetb0/gradcam/gradcam.py
+- models/mobilenetv2/explainability/gradcam.py ->
+  explainability/archive/mobilenetv2/gradcam/gradcam.py
+- models/mobilenetv2/explainability/gradcam_plus_plus.py ->
+  explainability/archive/mobilenetv2/gradcam_plus_plus/gradcam_plus_plus.py
+- models/mobilenetv2/explainability/__init__.py ->
+  explainability/archive/mobilenetv2/legacy_explainability_init.py
+- All 74 files under models/mobilenetv2/explainability/outputs/ (25 Grad-CAM
+  and 49 Grad-CAM++ outputs) -> their respective archived outputs/ folders.
+- All 12 legacy images under
+  models/mobilenetv2/evaluation/disease_testing_outputs/explanations/ were
+  split by method between the archived Grad-CAM and Grad-CAM++ outputs.
+- models/mobilenetv2/evaluation/gradcam_analysis.txt ->
+  explainability/archive/mobilenetv2/reports/gradcam_analysis.txt
+- models/mobilenetv2/evaluation/gradcam_comparison_report.txt ->
+  explainability/archive/mobilenetv2/reports/gradcam_comparison_report.txt
+
+The MobileNetV2 archive contains all original explainability files: both
+scripts, the original package marker, 74 prior outputs, 12 legacy explanation
+images, and two reports. The archived scripts' output/import paths were updated
+to use the archive; saved reports and images match their pre-change backup
+hashes.
+
+Files preserved
+---------------
+- EfficientNetB0 model and mapping:
+  models/efficientnetb0/model.keras
+  models/efficientnetb0/class_mapping.json
+- EfficientNetB0 training, evaluation, reports, metrics, and confusion matrix.
+- MobileNetV2 model and mapping:
+  models/mobilenetv2/model.keras
+  models/mobilenetv2/class_mapping.json
+- MobileNetV2 training script, training checkpoint/artifacts, evaluation
+  report, confusion matrix CSV/image, and other research evaluation evidence.
+- Both original comparison reports in models/comparison/. Their comparison
+  results were not modified.
+
+Files modified
+--------------
+- testing/disease_inference.py now imports EfficientNetB0 explanation code
+  from its dedicated locations. Active inference continues to load only
+  models/efficientnetb0/model.keras.
+- testing/test_disease_module.py writes test overlays into separate
+  EfficientNetB0 Grad-CAM and Grad-CAM++ folders.
+- EfficientNetB0 Grad-CAM code was relocated; its Grad-CAM++ implementation
+  was separated into the dedicated Grad-CAM++ module. Its generated output
+  and notes paths now use explainability/efficientnetb0/.
+- The two archived MobileNetV2 scripts were relocated and their research
+  import/output/report paths were updated for the archive.
+
+Files created
+-------------
+- explainability/efficientnetb0/gradcam_plus_plus/gradcam_plus_plus.py
+- Package initializers for the new EfficientNetB0 and MobileNetV2
+  explainability folders.
+- Sample output overlays:
+  explainability/efficientnetb0/gradcam/sample_gradcam.png
+  explainability/efficientnetb0/gradcam_plus_plus/sample_gradcam_plus_plus.png
+- This final verification report.
+
+Active application model
+------------------------
+Model: models/efficientnetb0/model.keras
+Class mapping: models/efficientnetb0/class_mapping.json
+Class order: Blight, Common_Rust, Gray_Leaf_Spot, Healthy
+Archived research model: models/mobilenetv2/model.keras
+MobileNetV2 is not referenced or loaded by active testing/disease_inference.py
+or the active testing backend workflow. It remains available for research and
+model comparison.
+
+EfficientNetB0 verification
+---------------------------
+- Model path and four-class mapping verified; trained model name:
+  maize_efficientnetb0.
+- Preprocessing verified against the training helper: EXIF-corrected RGB,
+  224x224 bilinear resize, float32 raw [0,255] input, and the model's internal
+  1/255 rescaling.
+- Sample prediction succeeded: Blight, confidence 0.971189. Confidence equals
+  the predicted class probability.
+- Grad-CAM succeeded for the predicted class; finite 7x7 heatmap and overlay
+  saved at explainability/efficientnetb0/gradcam/sample_gradcam.png.
+- Grad-CAM++ succeeded for the same predicted class and confidence; finite 7x7
+  heatmap and overlay saved at
+  explainability/efficientnetb0/gradcam_plus_plus/sample_gradcam_plus_plus.png.
+- No trained model weights were modified or retrained.
+
+Tests and errors
+----------------
+- `python -m pytest -q testing/test_disease_module.py`: 11 passed.
+- `python -m py_compile` on changed and archived Python modules: passed.
+- Archived MobileNetV2 modules imported successfully without loading a model.
+- SHA-256 checks confirmed both trained models are unchanged; all moved
+  MobileNetV2 generated outputs and preserved evaluation/comparison evidence
+  checked against the backup also match.
+- No frontend source or frontend test suite exists in this project, so frontend
+  tests were not applicable.
+- No outstanding project errors.
+
+Research comparison (unchanged evidence)
+----------------------------------------
+Metric                  EfficientNetB0   MobileNetV2
+Accuracy                    96.18%          95.22%
+Macro precision             94.73%          93.83%
+Macro recall                95.75%          94.29%
+Macro F1                    95.18%          94.05%
+Model size                  17.07 MB        21.79 MB
+Inference latency           57.949 ms       33.521 ms
+
+EfficientNetB0 leads on the reported aggregate test metrics and has the smaller
+serialized model, but is slower in the recorded batch-1 benchmark. Its
+Gray_Leaf_Spot precision (84.21%) is slightly below MobileNetV2 (84.44%); this
+false-positive trade-off remains visible in the unchanged comparison report.
+See models/comparison/model_comparison_report.txt and
+models/comparison/previous_model_comparison_report.txt for the original
+comparison evidence and methodology.

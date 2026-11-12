@@ -1,0 +1,464 @@
+﻿image_path,label,original_folder,split,related_group_id
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\10.jpeg,Healthy,Helathy,test,related_0002
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\19.jpeg,Healthy,Helathy,test,related_0011
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\25.jpeg,Healthy,Helathy,test,related_0018
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\34.jpeg,Healthy,Helathy,test,related_0028
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\40.jpeg,Healthy,Helathy,test,related_0035
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\41.jpeg,Healthy,Helathy,test,related_0036
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\43.jpeg,Healthy,Helathy,test,related_0038
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\47.jpeg,Healthy,Helathy,test,related_0042
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\59.jpeg,Healthy,Helathy,test,related_0055
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\72.jpeg,Healthy,Helathy,test,related_0070
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\9.jpeg,Healthy,Helathy,test,related_0072
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (1).jpeg,Magnesium,Magnessium,test,related_0073
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (100).jpeg,Magnesium,Magnessium,test,related_0075
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (106).jpeg,Magnesium,Magnessium,test,related_0081
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (117).jpeg,Magnesium,Magnessium,test,related_0093
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (123).jpeg,Magnesium,Magnessium,test,related_0100
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (13).jpeg,Magnesium,Magnessium,test,related_0101
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (14).jpeg,Magnesium,Magnessium,test,related_0102
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (18).jpeg,Magnesium,Magnessium,test,related_0106
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (23).jpeg,Magnesium,Magnessium,test,related_0112
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (27).jpeg,Magnesium,Magnessium,test,related_0116
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (3).jpeg,Magnesium,Magnessium,test,related_0119
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (39).jpeg,Magnesium,Magnessium,test,related_0129
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (42).jpeg,Magnesium,Magnessium,test,related_0133
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (48).jpeg,Magnesium,Magnessium,test,related_0139
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (50).jpeg,Magnesium,Magnessium,test,related_0142
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (58).jpeg,Magnesium,Magnessium,test,related_0150
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (8).jpeg,Magnesium,Magnessium,test,related_0174
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (83).jpeg,Magnesium,Magnessium,test,related_0178
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (12).jpeg,Nitrogen,Nitrogen,test,related_0198
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (4).jpeg,Nitrogen,Nitrogen,test,related_0228
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (40).jpeg,Nitrogen,Nitrogen,test,related_0229
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (41).jpeg,Nitrogen,Nitrogen,test,related_0230
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (5).jpeg,Nitrogen,Nitrogen,test,related_0239
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (51).jpeg,Nitrogen,Nitrogen,test,related_0241
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (53).jpeg,Nitrogen,Nitrogen,test,related_0243
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (56).jpeg,Nitrogen,Nitrogen,test,related_0246
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (64).jpeg,Nitrogen,Nitrogen,test,related_0255
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (71).jpeg,Nitrogen,Nitrogen,test,related_0263
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (75).jpeg,Nitrogen,Nitrogen,test,related_0267
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (87).jpeg,Nitrogen,Nitrogen,test,related_0279
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (88).jpeg,Nitrogen,Nitrogen,test,related_0280
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (90).jpeg,Nitrogen,Nitrogen,test,related_0283
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (94).jpeg,Nitrogen,Nitrogen,test,related_0287
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (103).jpeg,Phosphorus,Phosphorous,test,related_0298
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (111).jpeg,Phosphorus,Phosphorous,test,related_0307
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (16).jpeg,Phosphorus,Phosphorous,test,related_0313
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (17).jpeg,Phosphorus,Phosphorous,test,related_0314
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (22).jpeg,Phosphorus,Phosphorous,test,related_0320
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (23).jpeg,Phosphorus,Phosphorous,test,related_0321
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (25).jpeg,Phosphorus,Phosphorous,test,related_0323
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (26).jpeg,Phosphorus,Phosphorous,test,related_0324
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (27).jpeg,Phosphorus,Phosphorous,test,related_0325
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (35).jpeg,Phosphorus,Phosphorous,test,related_0334
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (38).jpeg,Phosphorus,Phosphorous,test,related_0337
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (51).jpeg,Phosphorus,Phosphorous,test,related_0352
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (52).jpeg,Phosphorus,Phosphorous,test,related_0353
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (69).jpeg,Phosphorus,Phosphorous,test,related_0371
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (72).jpeg,Phosphorus,Phosphorous,test,related_0375
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (90).jpeg,Phosphorus,Phosphorous,test,related_0395
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (92).jpeg,Phosphorus,Phosphorous,test,related_0397
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (13).jpeg,Potassium,Pottasium,test,related_0409
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (14).jpeg,Potassium,Pottasium,test,related_0410
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (18).jpeg,Potassium,Pottasium,test,related_0414
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (37).jpeg,Potassium,Pottasium,test,related_0433
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (39).jpeg,Potassium,Pottasium,test,related_0435
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (49).jpeg,Potassium,Pottasium,test,related_0446
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (54).jpeg,Potassium,Pottasium,test,related_0452
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (56).jpeg,Potassium,Pottasium,test,related_0454
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\1.jpeg,Healthy,Helathy,train,related_0001
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\12.jpeg,Healthy,Helathy,train,related_0004
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\13.jpeg,Healthy,Helathy,train,related_0005
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\14.jpeg,Healthy,Helathy,train,related_0006
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\15.jpeg,Healthy,Helathy,train,related_0007
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\16.jpeg,Healthy,Helathy,train,related_0008
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\17.jpeg,Healthy,Helathy,train,related_0009
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\18.jpeg,Healthy,Helathy,train,related_0010
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\21.jpeg,Healthy,Helathy,train,related_0014
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\23.jpeg,Healthy,Helathy,train,related_0016
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\24.jpeg,Healthy,Helathy,train,related_0017
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\26.jpeg,Healthy,Helathy,train,related_0019
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\27.jpeg,Healthy,Helathy,train,related_0020
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\28.jpeg,Healthy,Helathy,train,related_0021
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\3.jpeg,Healthy,Helathy,train,related_0023
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\30.jpeg,Healthy,Helathy,train,related_0024
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\31.jpeg,Healthy,Helathy,train,related_0025
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\32.jpeg,Healthy,Helathy,train,related_0026
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\35.jpeg,Healthy,Helathy,train,related_0029
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\36.jpeg,Healthy,Helathy,train,related_0030
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\37.jpeg,Healthy,Helathy,train,related_0031
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\39.jpeg,Healthy,Helathy,train,related_0033
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\4.jpeg,Healthy,Helathy,train,related_0034
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\42.jpeg,Healthy,Helathy,train,related_0037
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\44.jpeg,Healthy,Helathy,train,related_0039
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\45.jpeg,Healthy,Helathy,train,related_0040
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\46.jpeg,Healthy,Helathy,train,related_0041
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\48.jpeg,Healthy,Helathy,train,related_0043
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\49.jpeg,Healthy,Helathy,train,related_0044
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\5.jpeg,Healthy,Helathy,train,related_0045
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\50.jpeg,Healthy,Helathy,train,related_0046
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\51.jpeg,Healthy,Helathy,train,related_0047
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\52.jpeg,Healthy,Helathy,train,related_0048
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\53.jpeg,Healthy,Helathy,train,related_0049
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\54.jpeg,Healthy,Helathy,train,related_0050
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\55.jpeg,Healthy,Helathy,train,related_0051
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\56.jpeg,Healthy,Helathy,train,related_0052
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\57.jpeg,Healthy,Helathy,train,related_0053
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\58.jpeg,Healthy,Helathy,train,related_0054
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\6.jpeg,Healthy,Helathy,train,related_0056
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\60.jpeg,Healthy,Helathy,train,related_0057
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\61.jpeg,Healthy,Helathy,train,related_0058
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\63.jpeg,Healthy,Helathy,train,related_0060
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\64.jpeg,Healthy,Helathy,train,related_0061
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\66.jpeg,Healthy,Helathy,train,related_0063
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\67.jpeg,Healthy,Helathy,train,related_0064
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\68.jpeg,Healthy,Helathy,train,related_0065
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\70.jpeg,Healthy,Helathy,train,related_0068
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\71.jpeg,Healthy,Helathy,train,related_0069
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\8.jpeg,Healthy,Helathy,train,related_0071
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (10).jpeg,Magnesium,Magnessium,train,related_0074
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (101).jpeg,Magnesium,Magnessium,train,related_0076
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (102).jpeg,Magnesium,Magnessium,train,related_0077
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (103).jpeg,Magnesium,Magnessium,train,related_0078
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (104).jpeg,Magnesium,Magnessium,train,related_0079
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (107).jpeg,Magnesium,Magnessium,train,related_0082
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (108).jpeg,Magnesium,Magnessium,train,related_0083
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (109).jpeg,Magnesium,Magnessium,train,related_0084
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (11).jpeg,Magnesium,Magnessium,train,related_0085
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (110).jpeg,Magnesium,Magnessium,train,related_0086
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (113).jpeg,Magnesium,Magnessium,train,related_0089
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (114).jpeg,Magnesium,Magnessium,train,related_0090
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (115).jpeg,Magnesium,Magnessium,train,related_0091
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (116).jpeg,Magnesium,Magnessium,train,related_0092
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (119).jpeg,Magnesium,Magnessium,train,related_0095
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (12).jpeg,Magnesium,Magnessium,train,related_0096
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (120).jpeg,Magnesium,Magnessium,train,related_0097
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (121).jpeg,Magnesium,Magnessium,train,related_0098
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (122).jpeg,Magnesium,Magnessium,train,related_0099
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (15).jpeg,Magnesium,Magnessium,train,related_0103
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (17).jpeg,Magnesium,Magnessium,train,related_0105
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (19).jpeg,Magnesium,Magnessium,train,related_0107
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (2).jpeg,Magnesium,Magnessium,train,related_0108
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (20).jpeg,Magnesium,Magnessium,train,related_0109
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (21).jpeg,Magnesium,Magnessium,train,related_0110
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (22).jpeg,Magnesium,Magnessium,train,related_0111
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (24).jpeg,Magnesium,Magnessium,train,related_0113
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (25).jpeg,Magnesium,Magnessium,train,related_0114
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (26).jpeg,Magnesium,Magnessium,train,related_0115
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (28).jpeg,Magnesium,Magnessium,train,related_0117
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (29).jpeg,Magnesium,Magnessium,train,related_0118
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (30).jpeg,Magnesium,Magnessium,train,related_0120
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (31).jpeg,Magnesium,Magnessium,train,related_0121
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (32).jpeg,Magnesium,Magnessium,train,related_0122
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (33).jpeg,Magnesium,Magnessium,train,related_0123
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (34).jpeg,Magnesium,Magnessium,train,related_0124
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (35).jpeg,Magnesium,Magnessium,train,related_0125
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (36).jpeg,Magnesium,Magnessium,train,related_0126
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (37).jpeg,Magnesium,Magnessium,train,related_0127
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (38).jpeg,Magnesium,Magnessium,train,related_0128
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (4).jpeg,Magnesium,Magnessium,train,related_0130
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (40).jpeg,Magnesium,Magnessium,train,related_0131
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (41).jpeg,Magnesium,Magnessium,train,related_0132
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (43).jpeg,Magnesium,Magnessium,train,related_0134
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (44).jpeg,Magnesium,Magnessium,train,related_0135
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (45).jpeg,Magnesium,Magnessium,train,related_0136
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (46).jpeg,Magnesium,Magnessium,train,related_0137
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (47).jpeg,Magnesium,Magnessium,train,related_0138
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (51).jpeg,Magnesium,Magnessium,train,related_0143
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (52).jpeg,Magnesium,Magnessium,train,related_0144
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (54).jpeg,Magnesium,Magnessium,train,related_0146
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (56).jpeg,Magnesium,Magnessium,train,related_0148
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (59).jpeg,Magnesium,Magnessium,train,related_0151
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (6).jpeg,Magnesium,Magnessium,train,related_0152
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (60).jpeg,Magnesium,Magnessium,train,related_0153
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (61).jpeg,Magnesium,Magnessium,train,related_0154
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (62).jpeg,Magnesium,Magnessium,train,related_0155
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (63).jpeg,Magnesium,Magnessium,train,related_0156
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (64).jpeg,Magnesium,Magnessium,train,related_0157
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (65).jpeg,Magnesium,Magnessium,train,related_0158
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (66).jpeg,Magnesium,Magnessium,train,related_0159
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (67).jpeg,Magnesium,Magnessium,train,related_0160
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (68).jpeg,Magnesium,Magnessium,train,related_0161
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (69).jpeg,Magnesium,Magnessium,train,related_0162
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (7).jpeg,Magnesium,Magnessium,train,related_0163
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (71).jpeg,Magnesium,Magnessium,train,related_0165
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (72).jpeg,Magnesium,Magnessium,train,related_0166
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (73).jpeg,Magnesium,Magnessium,train,related_0167
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (75).jpeg,Magnesium,Magnessium,train,related_0169
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (77).jpeg,Magnesium,Magnessium,train,related_0171
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (78).jpeg,Magnesium,Magnessium,train,related_0172
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (79).jpeg,Magnesium,Magnessium,train,related_0173
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (80).jpeg,Magnesium,Magnessium,train,related_0175
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (81).jpeg,Magnesium,Magnessium,train,related_0176
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (85).jpeg,Magnesium,Magnessium,train,related_0180
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (86).jpeg,Magnesium,Magnessium,train,related_0181
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (87).jpeg,Magnesium,Magnessium,train,related_0181
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (88).jpeg,Magnesium,Magnessium,train,related_0182
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (89).jpeg,Magnesium,Magnessium,train,related_0183
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (9).jpeg,Magnesium,Magnessium,train,related_0184
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (91).jpeg,Magnesium,Magnessium,train,related_0186
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (92).jpeg,Magnesium,Magnessium,train,related_0187
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (93).jpeg,Magnesium,Magnessium,train,related_0188
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (95).jpeg,Magnesium,Magnessium,train,related_0190
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (97).jpeg,Magnesium,Magnessium,train,related_0192
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (98).jpeg,Magnesium,Magnessium,train,related_0193
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (1).jpeg,Nitrogen,Nitrogen,train,related_0195
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (10).jpeg,Nitrogen,Nitrogen,train,related_0196
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (11).jpeg,Nitrogen,Nitrogen,train,related_0197
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (14).jpeg,Nitrogen,Nitrogen,train,related_0200
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (15).jpeg,Nitrogen,Nitrogen,train,related_0201
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (16).jpeg,Nitrogen,Nitrogen,train,related_0202
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (17).jpeg,Nitrogen,Nitrogen,train,related_0203
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (18).jpeg,Nitrogen,Nitrogen,train,related_0204
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (19).jpeg,Nitrogen,Nitrogen,train,related_0205
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (2).jpeg,Nitrogen,Nitrogen,train,related_0206
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (20).jpeg,Nitrogen,Nitrogen,train,related_0207
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (21).jpeg,Nitrogen,Nitrogen,train,related_0208
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (22).jpeg,Nitrogen,Nitrogen,train,related_0209
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (23).jpeg,Nitrogen,Nitrogen,train,related_0210
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (24).jpeg,Nitrogen,Nitrogen,train,related_0211
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (25).jpeg,Nitrogen,Nitrogen,train,related_0212
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (26).jpeg,Nitrogen,Nitrogen,train,related_0213
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (27).jpeg,Nitrogen,Nitrogen,train,related_0214
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (28).jpeg,Nitrogen,Nitrogen,train,related_0215
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (29).jpeg,Nitrogen,Nitrogen,train,related_0216
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (30).jpeg,Nitrogen,Nitrogen,train,related_0218
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (31).jpeg,Nitrogen,Nitrogen,train,related_0219
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (33).jpeg,Nitrogen,Nitrogen,train,related_0221
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (34).jpeg,Nitrogen,Nitrogen,train,related_0222
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (35).jpeg,Nitrogen,Nitrogen,train,related_0223
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (37).jpeg,Nitrogen,Nitrogen,train,related_0225
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (42).jpeg,Nitrogen,Nitrogen,train,related_0231
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (43).jpeg,Nitrogen,Nitrogen,train,related_0232
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (45).jpeg,Nitrogen,Nitrogen,train,related_0234
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (46).jpeg,Nitrogen,Nitrogen,train,related_0235
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (47).jpeg,Nitrogen,Nitrogen,train,related_0236
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (49).jpeg,Nitrogen,Nitrogen,train,related_0238
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (50).jpeg,Nitrogen,Nitrogen,train,related_0240
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (52).jpeg,Nitrogen,Nitrogen,train,related_0242
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (54).jpeg,Nitrogen,Nitrogen,train,related_0244
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (57).jpeg,Nitrogen,Nitrogen,train,related_0247
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (58).jpeg,Nitrogen,Nitrogen,train,related_0248
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (59).jpeg,Nitrogen,Nitrogen,train,related_0249
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (6).jpeg,Nitrogen,Nitrogen,train,related_0250
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (60).jpeg,Nitrogen,Nitrogen,train,related_0251
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (61).jpeg,Nitrogen,Nitrogen,train,related_0252
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (63).jpeg,Nitrogen,Nitrogen,train,related_0254
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (65).jpeg,Nitrogen,Nitrogen,train,related_0256
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (66).jpeg,Nitrogen,Nitrogen,train,related_0257
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (67).jpeg,Nitrogen,Nitrogen,train,related_0258
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (68).jpeg,Nitrogen,Nitrogen,train,related_0259
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (69).jpeg,Nitrogen,Nitrogen,train,related_0260
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (70).jpeg,Nitrogen,Nitrogen,train,related_0262
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (72).jpeg,Nitrogen,Nitrogen,train,related_0264
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (73).jpeg,Nitrogen,Nitrogen,train,related_0265
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (74).jpeg,Nitrogen,Nitrogen,train,related_0266
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (76).jpeg,Nitrogen,Nitrogen,train,related_0268
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (77).jpeg,Nitrogen,Nitrogen,train,related_0269
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (78).jpeg,Nitrogen,Nitrogen,train,related_0270
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (8).jpeg,Nitrogen,Nitrogen,train,related_0197
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (82).jpeg,Nitrogen,Nitrogen,train,related_0274
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (83).jpeg,Nitrogen,Nitrogen,train,related_0275
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (84).jpeg,Nitrogen,Nitrogen,train,related_0276
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (85).jpeg,Nitrogen,Nitrogen,train,related_0277
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (86).jpeg,Nitrogen,Nitrogen,train,related_0278
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (89).jpeg,Nitrogen,Nitrogen,train,related_0281
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (9).jpeg,Nitrogen,Nitrogen,train,related_0282
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (92).jpeg,Nitrogen,Nitrogen,train,related_0285
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (93).jpeg,Nitrogen,Nitrogen,train,related_0286
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (95).jpeg,Nitrogen,Nitrogen,train,related_0288
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (96).jpeg,Nitrogen,Nitrogen,train,related_0289
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (97).jpeg,Nitrogen,Nitrogen,train,related_0290
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (98).jpeg,Nitrogen,Nitrogen,train,related_0291
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (99).jpeg,Nitrogen,Nitrogen,train,related_0292
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (1).jpeg,Phosphorus,Phosphorous,train,related_0293
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (10).jpeg,Phosphorus,Phosphorous,train,related_0294
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (101).jpeg,Phosphorus,Phosphorous,train,related_0296
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (102).jpeg,Phosphorus,Phosphorous,train,related_0297
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (104).jpeg,Phosphorus,Phosphorous,train,related_0299
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (105).jpeg,Phosphorus,Phosphorous,train,related_0300
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (106).jpeg,Phosphorus,Phosphorous,train,related_0301
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (107).jpeg,Phosphorus,Phosphorous,train,related_0302
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (108).jpeg,Phosphorus,Phosphorous,train,related_0303
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (109).jpeg,Phosphorus,Phosphorous,train,related_0304
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (11).jpeg,Phosphorus,Phosphorous,train,related_0305
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (110).jpeg,Phosphorus,Phosphorous,train,related_0306
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (112).jpeg,Phosphorus,Phosphorous,train,related_0308
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (113).jpeg,Phosphorus,Phosphorous,train,related_0309
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (12).jpeg,Phosphorus,Phosphorous,train,related_0310
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (13).jpeg,Phosphorus,Phosphorous,train,related_0311
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (14).jpeg,Phosphorus,Phosphorous,train,related_0293
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (18).jpeg,Phosphorus,Phosphorous,train,related_0315
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (2).jpeg,Phosphorus,Phosphorous,train,related_0317
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (21).jpeg,Phosphorus,Phosphorous,train,related_0319
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (24).jpeg,Phosphorus,Phosphorous,train,related_0322
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (29).jpeg,Phosphorus,Phosphorous,train,related_0327
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (3).jpeg,Phosphorus,Phosphorous,train,related_0328
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (30).jpeg,Phosphorus,Phosphorous,train,related_0329
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (31).jpeg,Phosphorus,Phosphorous,train,related_0330
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (32).jpeg,Phosphorus,Phosphorous,train,related_0331
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (34).jpeg,Phosphorus,Phosphorous,train,related_0333
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (36).jpeg,Phosphorus,Phosphorous,train,related_0335
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (39).jpeg,Phosphorus,Phosphorous,train,related_0338
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (4).jpeg,Phosphorus,Phosphorous,train,related_0339
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (40).jpeg,Phosphorus,Phosphorous,train,related_0340
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (41).jpeg,Phosphorus,Phosphorous,train,related_0341
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (42).jpeg,Phosphorus,Phosphorous,train,related_0342
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (43).jpeg,Phosphorus,Phosphorous,train,related_0343
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (44).jpeg,Phosphorus,Phosphorous,train,related_0344
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (45).jpeg,Phosphorus,Phosphorous,train,related_0345
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (48).jpeg,Phosphorus,Phosphorous,train,related_0348
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (49).jpeg,Phosphorus,Phosphorous,train,related_0349
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (5).jpeg,Phosphorus,Phosphorous,train,related_0350
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (53).jpeg,Phosphorus,Phosphorous,train,related_0354
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (54).jpeg,Phosphorus,Phosphorous,train,related_0355
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (55).jpeg,Phosphorus,Phosphorous,train,related_0356
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (56).jpeg,Phosphorus,Phosphorous,train,related_0357
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (57).jpeg,Phosphorus,Phosphorous,train,related_0358
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (58).jpeg,Phosphorus,Phosphorous,train,related_0359
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (59).jpeg,Phosphorus,Phosphorous,train,related_0360
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (6).jpeg,Phosphorus,Phosphorous,train,related_0361
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (61).jpeg,Phosphorus,Phosphorous,train,related_0363
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (62).jpeg,Phosphorus,Phosphorous,train,related_0364
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (64).jpeg,Phosphorus,Phosphorous,train,related_0366
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (66).jpeg,Phosphorus,Phosphorous,train,related_0368
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (67).jpeg,Phosphorus,Phosphorous,train,related_0369
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (68).jpeg,Phosphorus,Phosphorous,train,related_0370
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (7).jpeg,Phosphorus,Phosphorous,train,related_0372
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (70).jpeg,Phosphorus,Phosphorous,train,related_0373
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (71).jpeg,Phosphorus,Phosphorous,train,related_0374
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (74).jpeg,Phosphorus,Phosphorous,train,related_0377
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (75).jpeg,Phosphorus,Phosphorous,train,related_0378
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (77).jpeg,Phosphorus,Phosphorous,train,related_0380
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (78).jpeg,Phosphorus,Phosphorous,train,related_0381
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (79).jpeg,Phosphorus,Phosphorous,train,related_0382
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (8).jpeg,Phosphorus,Phosphorous,train,related_0383
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (80).jpeg,Phosphorus,Phosphorous,train,related_0384
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (81).jpeg,Phosphorus,Phosphorous,train,related_0385
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (82).jpeg,Phosphorus,Phosphorous,train,related_0386
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (84).jpeg,Phosphorus,Phosphorous,train,related_0388
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (85).jpeg,Phosphorus,Phosphorous,train,related_0389
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (86).jpeg,Phosphorus,Phosphorous,train,related_0390
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (87).jpeg,Phosphorus,Phosphorous,train,related_0391
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (88).jpeg,Phosphorus,Phosphorous,train,related_0392
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (89).jpeg,Phosphorus,Phosphorous,train,related_0393
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (9).jpeg,Phosphorus,Phosphorous,train,related_0394
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (91).jpeg,Phosphorus,Phosphorous,train,related_0396
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (93).jpeg,Phosphorus,Phosphorous,train,related_0398
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (94).jpeg,Phosphorus,Phosphorous,train,related_0399
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (95).jpeg,Phosphorus,Phosphorous,train,related_0400
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (96).jpeg,Phosphorus,Phosphorous,train,related_0401
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (97).jpeg,Phosphorus,Phosphorous,train,related_0402
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (98).jpeg,Phosphorus,Phosphorous,train,related_0403
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (1).jpeg,Potassium,Pottasium,train,related_0405
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (11).jpeg,Potassium,Pottasium,train,related_0407
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (12).jpeg,Potassium,Pottasium,train,related_0408
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (15).jpeg,Potassium,Pottasium,train,related_0411
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (16).jpeg,Potassium,Pottasium,train,related_0412
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (17).jpeg,Potassium,Pottasium,train,related_0413
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (19).jpeg,Potassium,Pottasium,train,related_0415
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (2).jpeg,Potassium,Pottasium,train,related_0416
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (20).jpeg,Potassium,Pottasium,train,related_0417
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (21).jpeg,Potassium,Pottasium,train,related_0418
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (22).jpeg,Potassium,Pottasium,train,related_0419
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (23).jpeg,Potassium,Pottasium,train,related_0420
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (24).jpeg,Potassium,Pottasium,train,related_0421
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (27).jpeg,Potassium,Pottasium,train,related_0421
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (28).jpeg,Potassium,Pottasium,train,related_0424
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (29).jpeg,Potassium,Pottasium,train,related_0417
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (3).jpeg,Potassium,Pottasium,train,related_0425
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (30).jpeg,Potassium,Pottasium,train,related_0426
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (31).jpeg,Potassium,Pottasium,train,related_0427
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (32).jpeg,Potassium,Pottasium,train,related_0428
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (33).jpeg,Potassium,Pottasium,train,related_0429
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (34).jpeg,Potassium,Pottasium,train,related_0430
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (35).jpeg,Potassium,Pottasium,train,related_0431
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (36).jpeg,Potassium,Pottasium,train,related_0432
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (38).jpeg,Potassium,Pottasium,train,related_0434
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (40).jpeg,Potassium,Pottasium,train,related_0437
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (41).jpeg,Potassium,Pottasium,train,related_0438
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (43).jpeg,Potassium,Pottasium,train,related_0440
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (44).jpeg,Potassium,Pottasium,train,related_0441
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (47).jpeg,Potassium,Pottasium,train,related_0444
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (48).jpeg,Potassium,Pottasium,train,related_0445
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (5).jpeg,Potassium,Pottasium,train,related_0447
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (50).jpeg,Potassium,Pottasium,train,related_0448
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (51).jpeg,Potassium,Pottasium,train,related_0449
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (55).jpeg,Potassium,Pottasium,train,related_0453
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (6).jpeg,Potassium,Pottasium,train,related_0455
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (7).jpeg,Potassium,Pottasium,train,related_0456
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (8).jpeg,Potassium,Pottasium,train,related_0457
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (9).jpeg,Potassium,Pottasium,train,related_0458
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\11.jpeg,Healthy,Helathy,val,related_0003
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\2.jpeg,Healthy,Helathy,val,related_0012
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\20.jpeg,Healthy,Helathy,val,related_0013
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\22.jpeg,Healthy,Helathy,val,related_0015
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\29.jpeg,Healthy,Helathy,val,related_0022
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\33.jpeg,Healthy,Helathy,val,related_0027
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\38.jpeg,Healthy,Helathy,val,related_0032
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\62.jpeg,Healthy,Helathy,val,related_0059
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\65.jpeg,Healthy,Helathy,val,related_0062
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\69.jpeg,Healthy,Helathy,val,related_0066
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Helathy\7.jpeg,Healthy,Helathy,val,related_0067
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (105).jpeg,Magnesium,Magnessium,val,related_0080
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (111).jpeg,Magnesium,Magnessium,val,related_0087
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (112).jpeg,Magnesium,Magnessium,val,related_0088
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (118).jpeg,Magnesium,Magnessium,val,related_0094
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (16).jpeg,Magnesium,Magnessium,val,related_0104
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (49).jpeg,Magnesium,Magnessium,val,related_0140
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (5).jpeg,Magnesium,Magnessium,val,related_0141
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (53).jpeg,Magnesium,Magnessium,val,related_0145
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (55).jpeg,Magnesium,Magnessium,val,related_0147
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (57).jpeg,Magnesium,Magnessium,val,related_0149
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (70).jpeg,Magnesium,Magnessium,val,related_0164
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (74).jpeg,Magnesium,Magnessium,val,related_0168
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (76).jpeg,Magnesium,Magnessium,val,related_0170
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (82).jpeg,Magnesium,Magnessium,val,related_0177
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (84).jpeg,Magnesium,Magnessium,val,related_0179
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (90).jpeg,Magnesium,Magnessium,val,related_0185
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (94).jpeg,Magnesium,Magnessium,val,related_0189
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (96).jpeg,Magnesium,Magnessium,val,related_0191
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (99).jpeg,Magnesium,Magnessium,val,related_0194
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (13).jpeg,Nitrogen,Nitrogen,val,related_0199
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (3).jpeg,Nitrogen,Nitrogen,val,related_0217
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (32).jpeg,Nitrogen,Nitrogen,val,related_0220
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (36).jpeg,Nitrogen,Nitrogen,val,related_0224
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (38).jpeg,Nitrogen,Nitrogen,val,related_0226
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (39).jpeg,Nitrogen,Nitrogen,val,related_0227
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (44).jpeg,Nitrogen,Nitrogen,val,related_0233
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (48).jpeg,Nitrogen,Nitrogen,val,related_0237
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (55).jpeg,Nitrogen,Nitrogen,val,related_0245
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (62).jpeg,Nitrogen,Nitrogen,val,related_0253
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (7).jpeg,Nitrogen,Nitrogen,val,related_0261
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (79).jpeg,Nitrogen,Nitrogen,val,related_0271
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (80).jpeg,Nitrogen,Nitrogen,val,related_0272
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (81).jpeg,Nitrogen,Nitrogen,val,related_0273
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (91).jpeg,Nitrogen,Nitrogen,val,related_0284
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (100).jpeg,Phosphorus,Phosphorous,val,related_0295
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (15).jpeg,Phosphorus,Phosphorous,val,related_0312
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (19).jpeg,Phosphorus,Phosphorous,val,related_0316
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (20).jpeg,Phosphorus,Phosphorous,val,related_0318
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (28).jpeg,Phosphorus,Phosphorous,val,related_0326
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (33).jpeg,Phosphorus,Phosphorous,val,related_0332
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (37).jpeg,Phosphorus,Phosphorous,val,related_0336
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (46).jpeg,Phosphorus,Phosphorous,val,related_0346
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (47).jpeg,Phosphorus,Phosphorous,val,related_0347
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (50).jpeg,Phosphorus,Phosphorous,val,related_0351
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (60).jpeg,Phosphorus,Phosphorous,val,related_0362
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (63).jpeg,Phosphorus,Phosphorous,val,related_0365
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (65).jpeg,Phosphorus,Phosphorous,val,related_0367
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (73).jpeg,Phosphorus,Phosphorous,val,related_0376
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (76).jpeg,Phosphorus,Phosphorous,val,related_0379
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (83).jpeg,Phosphorus,Phosphorous,val,related_0387
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (99).jpeg,Phosphorus,Phosphorous,val,related_0404
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (10).jpeg,Potassium,Pottasium,val,related_0406
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (25).jpeg,Potassium,Pottasium,val,related_0422
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (26).jpeg,Potassium,Pottasium,val,related_0423
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (4).jpeg,Potassium,Pottasium,val,related_0436
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (42).jpeg,Potassium,Pottasium,val,related_0439
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (45).jpeg,Potassium,Pottasium,val,related_0442
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (46).jpeg,Potassium,Pottasium,val,related_0443
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (52).jpeg,Potassium,Pottasium,val,related_0450
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (53).jpeg,Potassium,Pottasium,val,related_0451

@@ -1,0 +1,155 @@
+sample_id,check,status,details
+01_Blight_correct_Corn_Blight_1007,training_preprocessing_match,PASS,"shape=(224, 224, 3), dtype=float32, range=[0.000,250.000]"
+01_Blight_correct_Corn_Blight_1007,saved_prediction_matches_fresh_inference,PASS,fresh=Blight/0.97118866; saved=Blight/0.971189
+01_Blight_correct_Corn_Blight_1007,confidence_valid,PASS,predicted class probability=0.97118866
+01_Blight_correct_Corn_Blight_1007,sample_correctness_matches_selection,PASS,"expected=correct, observed=correct"
+01_Blight_correct_Corn_Blight_1007,both_methods_returned,PASS,"returned=['Grad-CAM', 'Grad-CAM++']"
+01_Blight_correct_Corn_Blight_1007,gradcam_finite,PASS,"shape=(7, 7)"
+01_Blight_correct_Corn_Blight_1007,gradcam_normalized,PASS,"min=0.056348745, max=1"
+01_Blight_correct_Corn_Blight_1007,gradcam_dimensions,PASS,"heatmap=(7, 7), activation=(7, 7, 1280)"
+01_Blight_correct_Corn_Blight_1007,gradcam_targets_predicted_class,PASS,"target=Blight, expected=Blight"
+01_Blight_correct_Corn_Blight_1007,gradcam_confidence_matches_prediction,PASS,"method=0.97118866, prediction=0.97118866"
+01_Blight_correct_Corn_Blight_1007,gradcam_matches_independent_numpy_formula,PASS,independent gradient/alpha calculation agreement
+01_Blight_correct_Corn_Blight_1007,gradcam_overlay_valid,PASS,"resized=(256, 256), overlay=(256, 256, 3), blend=0.55/0.45"
+01_Blight_correct_Corn_Blight_1007,gradcam_plus_plus_finite,PASS,"shape=(7, 7)"
+01_Blight_correct_Corn_Blight_1007,gradcam_plus_plus_normalized,PASS,"min=0, max=1"
+01_Blight_correct_Corn_Blight_1007,gradcam_plus_plus_dimensions,PASS,"heatmap=(7, 7), activation=(7, 7, 1280)"
+01_Blight_correct_Corn_Blight_1007,gradcam_plus_plus_targets_predicted_class,PASS,"target=Blight, expected=Blight"
+01_Blight_correct_Corn_Blight_1007,gradcam_plus_plus_confidence_matches_prediction,PASS,"method=0.97118866, prediction=0.97118866"
+01_Blight_correct_Corn_Blight_1007,gradcam_plus_plus_matches_independent_numpy_formula,PASS,independent gradient/alpha calculation agreement
+01_Blight_correct_Corn_Blight_1007,gradcam_plus_plus_overlay_valid,PASS,"resized=(256, 256), overlay=(256, 256, 3), blend=0.55/0.45"
+01_Blight_correct_Corn_Blight_1007,methods_explain_same_target,PASS,Grad-CAM=Blight; Grad-CAM++=Blight
+01_Blight_correct_Corn_Blight_1007,methods_have_independent_map_values,PASS,normalized-map mean absolute difference=0.23699594
+02_Blight_misclassified_Corn_Blight_361,training_preprocessing_match,PASS,"shape=(224, 224, 3), dtype=float32, range=[5.000,246.000]"
+02_Blight_misclassified_Corn_Blight_361,saved_prediction_matches_fresh_inference,PASS,fresh=Gray_Leaf_Spot/0.71052563; saved=Gray_Leaf_Spot/0.710525
+02_Blight_misclassified_Corn_Blight_361,confidence_valid,PASS,predicted class probability=0.71052563
+02_Blight_misclassified_Corn_Blight_361,sample_correctness_matches_selection,PASS,"expected=misclassified, observed=misclassified"
+02_Blight_misclassified_Corn_Blight_361,both_methods_returned,PASS,"returned=['Grad-CAM', 'Grad-CAM++']"
+02_Blight_misclassified_Corn_Blight_361,gradcam_finite,PASS,"shape=(7, 7)"
+02_Blight_misclassified_Corn_Blight_361,gradcam_normalized,PASS,"min=0, max=1"
+02_Blight_misclassified_Corn_Blight_361,gradcam_dimensions,PASS,"heatmap=(7, 7), activation=(7, 7, 1280)"
+02_Blight_misclassified_Corn_Blight_361,gradcam_targets_predicted_class,PASS,"target=Gray_Leaf_Spot, expected=Gray_Leaf_Spot"
+02_Blight_misclassified_Corn_Blight_361,gradcam_confidence_matches_prediction,PASS,"method=0.71052563, prediction=0.71052563"
+02_Blight_misclassified_Corn_Blight_361,gradcam_matches_independent_numpy_formula,PASS,independent gradient/alpha calculation agreement
+02_Blight_misclassified_Corn_Blight_361,gradcam_overlay_valid,PASS,"resized=(256, 256), overlay=(256, 256, 3), blend=0.55/0.45"
+02_Blight_misclassified_Corn_Blight_361,gradcam_plus_plus_finite,PASS,"shape=(7, 7)"
+02_Blight_misclassified_Corn_Blight_361,gradcam_plus_plus_normalized,PASS,"min=0, max=1"
+02_Blight_misclassified_Corn_Blight_361,gradcam_plus_plus_dimensions,PASS,"heatmap=(7, 7), activation=(7, 7, 1280)"
+02_Blight_misclassified_Corn_Blight_361,gradcam_plus_plus_targets_predicted_class,PASS,"target=Gray_Leaf_Spot, expected=Gray_Leaf_Spot"
+02_Blight_misclassified_Corn_Blight_361,gradcam_plus_plus_confidence_matches_prediction,PASS,"method=0.71052563, prediction=0.71052563"
+02_Blight_misclassified_Corn_Blight_361,gradcam_plus_plus_matches_independent_numpy_formula,PASS,independent gradient/alpha calculation agreement
+02_Blight_misclassified_Corn_Blight_361,gradcam_plus_plus_overlay_valid,PASS,"resized=(256, 256), overlay=(256, 256, 3), blend=0.55/0.45"
+02_Blight_misclassified_Corn_Blight_361,methods_explain_same_target,PASS,Grad-CAM=Gray_Leaf_Spot; Grad-CAM++=Gray_Leaf_Spot
+02_Blight_misclassified_Corn_Blight_361,methods_have_independent_map_values,PASS,normalized-map mean absolute difference=0.23612303
+03_Common_Rust_correct_Corn_Common_Rust_1005,training_preprocessing_match,PASS,"shape=(224, 224, 3), dtype=float32, range=[0.000,251.000]"
+03_Common_Rust_correct_Corn_Common_Rust_1005,saved_prediction_matches_fresh_inference,PASS,fresh=Common_Rust/0.99515897; saved=Common_Rust/0.995159
+03_Common_Rust_correct_Corn_Common_Rust_1005,confidence_valid,PASS,predicted class probability=0.99515897
+03_Common_Rust_correct_Corn_Common_Rust_1005,sample_correctness_matches_selection,PASS,"expected=correct, observed=correct"
+03_Common_Rust_correct_Corn_Common_Rust_1005,both_methods_returned,PASS,"returned=['Grad-CAM', 'Grad-CAM++']"
+03_Common_Rust_correct_Corn_Common_Rust_1005,gradcam_finite,PASS,"shape=(7, 7)"
+03_Common_Rust_correct_Corn_Common_Rust_1005,gradcam_normalized,PASS,"min=0, max=1"
+03_Common_Rust_correct_Corn_Common_Rust_1005,gradcam_dimensions,PASS,"heatmap=(7, 7), activation=(7, 7, 1280)"
+03_Common_Rust_correct_Corn_Common_Rust_1005,gradcam_targets_predicted_class,PASS,"target=Common_Rust, expected=Common_Rust"
+03_Common_Rust_correct_Corn_Common_Rust_1005,gradcam_confidence_matches_prediction,PASS,"method=0.99515897, prediction=0.99515897"
+03_Common_Rust_correct_Corn_Common_Rust_1005,gradcam_matches_independent_numpy_formula,PASS,independent gradient/alpha calculation agreement
+03_Common_Rust_correct_Corn_Common_Rust_1005,gradcam_overlay_valid,PASS,"resized=(256, 256), overlay=(256, 256, 3), blend=0.55/0.45"
+03_Common_Rust_correct_Corn_Common_Rust_1005,gradcam_plus_plus_finite,PASS,"shape=(7, 7)"
+03_Common_Rust_correct_Corn_Common_Rust_1005,gradcam_plus_plus_normalized,PASS,"min=0, max=1"
+03_Common_Rust_correct_Corn_Common_Rust_1005,gradcam_plus_plus_dimensions,PASS,"heatmap=(7, 7), activation=(7, 7, 1280)"
+03_Common_Rust_correct_Corn_Common_Rust_1005,gradcam_plus_plus_targets_predicted_class,PASS,"target=Common_Rust, expected=Common_Rust"
+03_Common_Rust_correct_Corn_Common_Rust_1005,gradcam_plus_plus_confidence_matches_prediction,PASS,"method=0.99515897, prediction=0.99515897"
+03_Common_Rust_correct_Corn_Common_Rust_1005,gradcam_plus_plus_matches_independent_numpy_formula,PASS,independent gradient/alpha calculation agreement
+03_Common_Rust_correct_Corn_Common_Rust_1005,gradcam_plus_plus_overlay_valid,PASS,"resized=(256, 256), overlay=(256, 256, 3), blend=0.55/0.45"
+03_Common_Rust_correct_Corn_Common_Rust_1005,methods_explain_same_target,PASS,Grad-CAM=Common_Rust; Grad-CAM++=Common_Rust
+03_Common_Rust_correct_Corn_Common_Rust_1005,methods_have_independent_map_values,PASS,normalized-map mean absolute difference=0.10310306
+04_Common_Rust_misclassified_Corn_Common_Rust_1266,training_preprocessing_match,PASS,"shape=(224, 224, 3), dtype=float32, range=[0.000,255.000]"
+04_Common_Rust_misclassified_Corn_Common_Rust_1266,saved_prediction_matches_fresh_inference,PASS,fresh=Gray_Leaf_Spot/0.57079256; saved=Gray_Leaf_Spot/0.570792
+04_Common_Rust_misclassified_Corn_Common_Rust_1266,confidence_valid,PASS,predicted class probability=0.57079256
+04_Common_Rust_misclassified_Corn_Common_Rust_1266,sample_correctness_matches_selection,PASS,"expected=misclassified, observed=misclassified"
+04_Common_Rust_misclassified_Corn_Common_Rust_1266,both_methods_returned,PASS,"returned=['Grad-CAM', 'Grad-CAM++']"
+04_Common_Rust_misclassified_Corn_Common_Rust_1266,gradcam_finite,PASS,"shape=(7, 7)"
+04_Common_Rust_misclassified_Corn_Common_Rust_1266,gradcam_normalized,PASS,"min=0, max=1"
+04_Common_Rust_misclassified_Corn_Common_Rust_1266,gradcam_dimensions,PASS,"heatmap=(7, 7), activation=(7, 7, 1280)"
+04_Common_Rust_misclassified_Corn_Common_Rust_1266,gradcam_targets_predicted_class,PASS,"target=Gray_Leaf_Spot, expected=Gray_Leaf_Spot"
+04_Common_Rust_misclassified_Corn_Common_Rust_1266,gradcam_confidence_matches_prediction,PASS,"method=0.57079256, prediction=0.57079256"
+04_Common_Rust_misclassified_Corn_Common_Rust_1266,gradcam_matches_independent_numpy_formula,PASS,independent gradient/alpha calculation agreement
+04_Common_Rust_misclassified_Corn_Common_Rust_1266,gradcam_overlay_valid,PASS,"resized=(300, 300), overlay=(300, 300, 3), blend=0.55/0.45"
+04_Common_Rust_misclassified_Corn_Common_Rust_1266,gradcam_plus_plus_finite,PASS,"shape=(7, 7)"
+04_Common_Rust_misclassified_Corn_Common_Rust_1266,gradcam_plus_plus_normalized,PASS,"min=0, max=1"
+04_Common_Rust_misclassified_Corn_Common_Rust_1266,gradcam_plus_plus_dimensions,PASS,"heatmap=(7, 7), activation=(7, 7, 1280)"
+04_Common_Rust_misclassified_Corn_Common_Rust_1266,gradcam_plus_plus_targets_predicted_class,PASS,"target=Gray_Leaf_Spot, expected=Gray_Leaf_Spot"
+04_Common_Rust_misclassified_Corn_Common_Rust_1266,gradcam_plus_plus_confidence_matches_prediction,PASS,"method=0.57079256, prediction=0.57079256"
+04_Common_Rust_misclassified_Corn_Common_Rust_1266,gradcam_plus_plus_matches_independent_numpy_formula,PASS,independent gradient/alpha calculation agreement
+04_Common_Rust_misclassified_Corn_Common_Rust_1266,gradcam_plus_plus_overlay_valid,PASS,"resized=(300, 300), overlay=(300, 300, 3), blend=0.55/0.45"
+04_Common_Rust_misclassified_Corn_Common_Rust_1266,methods_explain_same_target,PASS,Grad-CAM=Gray_Leaf_Spot; Grad-CAM++=Gray_Leaf_Spot
+04_Common_Rust_misclassified_Corn_Common_Rust_1266,methods_have_independent_map_values,PASS,normalized-map mean absolute difference=0.1028478
+05_Gray_Leaf_Spot_correct_Corn_Gray_Spot_115,training_preprocessing_match,PASS,"shape=(224, 224, 3), dtype=float32, range=[7.000,233.000]"
+05_Gray_Leaf_Spot_correct_Corn_Gray_Spot_115,saved_prediction_matches_fresh_inference,PASS,fresh=Gray_Leaf_Spot/0.99470901; saved=Gray_Leaf_Spot/0.994709
+05_Gray_Leaf_Spot_correct_Corn_Gray_Spot_115,confidence_valid,PASS,predicted class probability=0.99470901
+05_Gray_Leaf_Spot_correct_Corn_Gray_Spot_115,sample_correctness_matches_selection,PASS,"expected=correct, observed=correct"
+05_Gray_Leaf_Spot_correct_Corn_Gray_Spot_115,both_methods_returned,PASS,"returned=['Grad-CAM', 'Grad-CAM++']"
+05_Gray_Leaf_Spot_correct_Corn_Gray_Spot_115,gradcam_finite,PASS,"shape=(7, 7)"
+05_Gray_Leaf_Spot_correct_Corn_Gray_Spot_115,gradcam_normalized,PASS,"min=0, max=1"
+05_Gray_Leaf_Spot_correct_Corn_Gray_Spot_115,gradcam_dimensions,PASS,"heatmap=(7, 7), activation=(7, 7, 1280)"
+05_Gray_Leaf_Spot_correct_Corn_Gray_Spot_115,gradcam_targets_predicted_class,PASS,"target=Gray_Leaf_Spot, expected=Gray_Leaf_Spot"
+05_Gray_Leaf_Spot_correct_Corn_Gray_Spot_115,gradcam_confidence_matches_prediction,PASS,"method=0.99470901, prediction=0.99470901"
+05_Gray_Leaf_Spot_correct_Corn_Gray_Spot_115,gradcam_matches_independent_numpy_formula,PASS,independent gradient/alpha calculation agreement
+05_Gray_Leaf_Spot_correct_Corn_Gray_Spot_115,gradcam_overlay_valid,PASS,"resized=(256, 256), overlay=(256, 256, 3), blend=0.55/0.45"
+05_Gray_Leaf_Spot_correct_Corn_Gray_Spot_115,gradcam_plus_plus_finite,PASS,"shape=(7, 7)"
+05_Gray_Leaf_Spot_correct_Corn_Gray_Spot_115,gradcam_plus_plus_normalized,PASS,"min=0, max=1"
+05_Gray_Leaf_Spot_correct_Corn_Gray_Spot_115,gradcam_plus_plus_dimensions,PASS,"heatmap=(7, 7), activation=(7, 7, 1280)"
+05_Gray_Leaf_Spot_correct_Corn_Gray_Spot_115,gradcam_plus_plus_targets_predicted_class,PASS,"target=Gray_Leaf_Spot, expected=Gray_Leaf_Spot"
+05_Gray_Leaf_Spot_correct_Corn_Gray_Spot_115,gradcam_plus_plus_confidence_matches_prediction,PASS,"method=0.99470901, prediction=0.99470901"
+05_Gray_Leaf_Spot_correct_Corn_Gray_Spot_115,gradcam_plus_plus_matches_independent_numpy_formula,PASS,independent gradient/alpha calculation agreement
+05_Gray_Leaf_Spot_correct_Corn_Gray_Spot_115,gradcam_plus_plus_overlay_valid,PASS,"resized=(256, 256), overlay=(256, 256, 3), blend=0.55/0.45"
+05_Gray_Leaf_Spot_correct_Corn_Gray_Spot_115,methods_explain_same_target,PASS,Grad-CAM=Gray_Leaf_Spot; Grad-CAM++=Gray_Leaf_Spot
+05_Gray_Leaf_Spot_correct_Corn_Gray_Spot_115,methods_have_independent_map_values,PASS,normalized-map mean absolute difference=0.19129796
+06_Gray_Leaf_Spot_misclassified_Corn_Gray_Spot_127,training_preprocessing_match,PASS,"shape=(224, 224, 3), dtype=float32, range=[17.000,215.000]"
+06_Gray_Leaf_Spot_misclassified_Corn_Gray_Spot_127,saved_prediction_matches_fresh_inference,PASS,fresh=Blight/0.54500604; saved=Blight/0.545006
+06_Gray_Leaf_Spot_misclassified_Corn_Gray_Spot_127,confidence_valid,PASS,predicted class probability=0.54500604
+06_Gray_Leaf_Spot_misclassified_Corn_Gray_Spot_127,sample_correctness_matches_selection,PASS,"expected=misclassified, observed=misclassified"
+06_Gray_Leaf_Spot_misclassified_Corn_Gray_Spot_127,both_methods_returned,PASS,"returned=['Grad-CAM', 'Grad-CAM++']"
+06_Gray_Leaf_Spot_misclassified_Corn_Gray_Spot_127,gradcam_finite,PASS,"shape=(7, 7)"
+06_Gray_Leaf_Spot_misclassified_Corn_Gray_Spot_127,gradcam_normalized,PASS,"min=0, max=1"
+06_Gray_Leaf_Spot_misclassified_Corn_Gray_Spot_127,gradcam_dimensions,PASS,"heatmap=(7, 7), activation=(7, 7, 1280)"
+06_Gray_Leaf_Spot_misclassified_Corn_Gray_Spot_127,gradcam_targets_predicted_class,PASS,"target=Blight, expected=Blight"
+06_Gray_Leaf_Spot_misclassified_Corn_Gray_Spot_127,gradcam_confidence_matches_prediction,PASS,"method=0.54500604, prediction=0.54500604"
+06_Gray_Leaf_Spot_misclassified_Corn_Gray_Spot_127,gradcam_matches_independent_numpy_formula,PASS,independent gradient/alpha calculation agreement
+06_Gray_Leaf_Spot_misclassified_Corn_Gray_Spot_127,gradcam_overlay_valid,PASS,"resized=(256, 256), overlay=(256, 256, 3), blend=0.55/0.45"
+06_Gray_Leaf_Spot_misclassified_Corn_Gray_Spot_127,gradcam_plus_plus_finite,PASS,"shape=(7, 7)"
+06_Gray_Leaf_Spot_misclassified_Corn_Gray_Spot_127,gradcam_plus_plus_normalized,PASS,"min=0, max=1"
+06_Gray_Leaf_Spot_misclassified_Corn_Gray_Spot_127,gradcam_plus_plus_dimensions,PASS,"heatmap=(7, 7), activation=(7, 7, 1280)"
+06_Gray_Leaf_Spot_misclassified_Corn_Gray_Spot_127,gradcam_plus_plus_targets_predicted_class,PASS,"target=Blight, expected=Blight"
+06_Gray_Leaf_Spot_misclassified_Corn_Gray_Spot_127,gradcam_plus_plus_confidence_matches_prediction,PASS,"method=0.54500604, prediction=0.54500604"
+06_Gray_Leaf_Spot_misclassified_Corn_Gray_Spot_127,gradcam_plus_plus_matches_independent_numpy_formula,PASS,independent gradient/alpha calculation agreement
+06_Gray_Leaf_Spot_misclassified_Corn_Gray_Spot_127,gradcam_plus_plus_overlay_valid,PASS,"resized=(256, 256), overlay=(256, 256, 3), blend=0.55/0.45"
+06_Gray_Leaf_Spot_misclassified_Corn_Gray_Spot_127,methods_explain_same_target,PASS,Grad-CAM=Blight; Grad-CAM++=Blight
+06_Gray_Leaf_Spot_misclassified_Corn_Gray_Spot_127,methods_have_independent_map_values,PASS,normalized-map mean absolute difference=0.25809571
+07_Healthy_correct_Corn_Health_100,training_preprocessing_match,PASS,"shape=(224, 224, 3), dtype=float32, range=[60.000,255.000]"
+07_Healthy_correct_Corn_Health_100,saved_prediction_matches_fresh_inference,PASS,fresh=Healthy/0.99939597; saved=Healthy/0.999396
+07_Healthy_correct_Corn_Health_100,confidence_valid,PASS,predicted class probability=0.99939597
+07_Healthy_correct_Corn_Health_100,sample_correctness_matches_selection,PASS,"expected=correct, observed=correct"
+07_Healthy_correct_Corn_Health_100,both_methods_returned,PASS,"returned=['Grad-CAM', 'Grad-CAM++']"
+07_Healthy_correct_Corn_Health_100,gradcam_finite,PASS,"shape=(7, 7)"
+07_Healthy_correct_Corn_Health_100,gradcam_normalized,PASS,"min=0.24291173, max=1"
+07_Healthy_correct_Corn_Health_100,gradcam_dimensions,PASS,"heatmap=(7, 7), activation=(7, 7, 1280)"
+07_Healthy_correct_Corn_Health_100,gradcam_targets_predicted_class,PASS,"target=Healthy, expected=Healthy"
+07_Healthy_correct_Corn_Health_100,gradcam_confidence_matches_prediction,PASS,"method=0.99939597, prediction=0.99939597"
+07_Healthy_correct_Corn_Health_100,gradcam_matches_independent_numpy_formula,PASS,independent gradient/alpha calculation agreement
+07_Healthy_correct_Corn_Health_100,gradcam_overlay_valid,PASS,"resized=(256, 256), overlay=(256, 256, 3), blend=0.55/0.45"
+07_Healthy_correct_Corn_Health_100,gradcam_plus_plus_finite,PASS,"shape=(7, 7)"
+07_Healthy_correct_Corn_Health_100,gradcam_plus_plus_normalized,PASS,"min=0, max=1"
+07_Healthy_correct_Corn_Health_100,gradcam_plus_plus_dimensions,PASS,"heatmap=(7, 7), activation=(7, 7, 1280)"
+07_Healthy_correct_Corn_Health_100,gradcam_plus_plus_targets_predicted_class,PASS,"target=Healthy, expected=Healthy"
+07_Healthy_correct_Corn_Health_100,gradcam_plus_plus_confidence_matches_prediction,PASS,"method=0.99939597, prediction=0.99939597"
+07_Healthy_correct_Corn_Health_100,gradcam_plus_plus_matches_independent_numpy_formula,PASS,independent gradient/alpha calculation agreement
+07_Healthy_correct_Corn_Health_100,gradcam_plus_plus_overlay_valid,PASS,"resized=(256, 256), overlay=(256, 256, 3), blend=0.55/0.45"
+07_Healthy_correct_Corn_Health_100,methods_explain_same_target,PASS,Grad-CAM=Healthy; Grad-CAM++=Healthy
+07_Healthy_correct_Corn_Health_100,methods_have_independent_map_values,PASS,normalized-map mean absolute difference=0.24791948
+GLOBAL,efficientnetb0_model_path,PASS,models\efficientnetb0\model.keras
+GLOBAL,four_class_mapping,PASS,"Blight, Common_Rust, Gray_Leaf_Spot, Healthy"
+GLOBAL,model_architecture_and_preprocessing,PASS,"input=(None, 224, 224, 3); output=(None, 4); activation=(7, 7, 1280)"
+GLOBAL,model_weights_unchanged,PASS,sha256=3c1e1a0e59666c3adc64a0b9a8c062c8c104dd1c6f5a6f4f1341e71b504835b2
+GLOBAL,class_mapping_unchanged,PASS,sha256=22b4559da7de0037e5e4f778e0e3b639736790cbd1ec4153020e3afaeaabd20c
+GLOBAL,all_test_images_unchanged,PASS,before=628 files; after=628 files; hashes_equal=True
+GLOBAL,gradcam_plus_plus_formula_independent_of_gradcam,PASS,"mean absolute map differences=0.23699594,0.23612303,0.10310306,0.1028478,0.19129796,0.25809571,0.24791948"

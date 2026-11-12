@@ -1,0 +1,53 @@
+EFFICIENTNETB0 MAIZE DISEASE TEST EVALUATION
+============================================
+
+Evaluation date: 2026-11-10 13:34:56 +0530
+Selected model phase: frozen EfficientNetB0 base
+Best validation loss: 0.169916
+Test image count: 628
+Test images were not used for training, checkpoint selection, or tuning.
+
+Test metrics (macro average)
+----------------------------
+Accuracy: 0.9618
+Precision: 0.9473
+Recall: 0.9575
+F1-score: 0.9518
+Gray_Leaf_Spot recall: 0.9302
+
+Classification report
+---------------------
+                precision    recall  f1-score   support
+
+        Blight     0.9524    0.9302    0.9412       172
+   Common_Rust     0.9948    0.9694    0.9819       196
+Gray_Leaf_Spot     0.8421    0.9302    0.8840        86
+       Healthy     1.0000    1.0000    1.0000       174
+
+      accuracy                         0.9618       628
+     macro avg     0.9473    0.9575    0.9518       628
+  weighted avg     0.9637    0.9618    0.9624       628
+
+Confusion matrix (rows are actual; columns are predicted)
+----------------------------------------------------------
+Blight: [160, 1, 11, 0]
+Common_Rust: [2, 190, 4, 0]
+Gray_Leaf_Spot: [6, 0, 80, 0]
+Healthy: [0, 0, 0, 174]
+
+Model and runtime
+-----------------
+Architecture: EfficientNetB0, ImageNet pretrained, include_top=False
+Input: 224x224 RGB, raw [0,255]; internal EfficientNet rescaling
+Head: GlobalAveragePooling2D -> Dropout(0.3) -> Dense(4, softmax)
+Training time: 3562.65 s (including pretrained initialization and save)
+Model size: 17.07 MB
+Parameter count: 4,054,695
+Average batch-1 inference time: 57.949 ms/image over 32 balanced validation images; warm-up excluded, image decoding/resizing excluded.
+Training device: /physical_device:CPU:0
+
+Misclassification summary
+-------------------------
+Misclassified images: 24
+Gray_Leaf_Spot images: 6 misclassified of 86.
+Individual misclassified test images were copied without changing source files.

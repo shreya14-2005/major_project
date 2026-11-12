@@ -1,0 +1,51 @@
+MAIZE DISEASE DATASET SPLIT REPORT
+====================================
+
+Preparation date: 2026-10-31T16:16:24+05:30
+Source directory: C:\Users\ADMIN\Desktop\major_project\datasets\archive (3)\data
+Prepared dataset directory: C:\Users\ADMIN\Desktop\major_project\datasets\maize_disease_processed
+Random seed: 42
+Target proportions: train 70%, val 15%, test 15%
+All original images were copied without resizing or augmentation.
+Source image files were not moved, modified, or deleted.
+
+Image counts by split
+---------------------
+train: 2932 images (70.01%; target 70%)
+val: 628 images (15.00%; target 15%)
+test: 628 images (15.00%; target 15%)
+
+Class distribution by split
+----------------------------
+Blight: 1146 total
+  train: 802 images (69.98%; target 70%)
+  val: 172 images (15.01%; target 15%)
+  test: 172 images (15.01%; target 15%)
+Common_Rust: 1306 total
+  train: 914 images (69.98%; target 70%)
+  val: 196 images (15.01%; target 15%)
+  test: 196 images (15.01%; target 15%)
+Gray_Leaf_Spot: 574 total
+  train: 402 images (70.03%; target 70%)
+  val: 86 images (14.98%; target 15%)
+  test: 86 images (14.98%; target 15%)
+Healthy: 1162 total
+  train: 814 images (70.05%; target 70%)
+  val: 174 images (14.97%; target 15%)
+  test: 174 images (14.97%; target 15%)
+
+Validation checks
+-----------------
+Source readable images assigned: 4188
+Unreadable images found: 0
+Total images across splits: 4188
+Every source image assigned exactly once: yes
+Every copied file byte-for-byte matches its source: yes
+Duplicate pixel groups cross splits: no
+Duplicate groups checked against inspection report: 2
+Duplicate groups spanning different class labels: 2
+
+Issues to review before training
+--------------------------------
+- The inspection report identifies duplicate image content under different class labels. These groups were kept in one split each, but their conflicting labels should be reviewed before training.
+- The folder labels were preserved as supplied; verify the meaning of 'Blight' from authoritative dataset metadata before disease-specific claims.

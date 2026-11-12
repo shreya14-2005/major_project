@@ -1,0 +1,55 @@
+{
+  "architecture": "EfficientNetB0",
+  "weights": "ImageNet",
+  "image_size": [
+    224,
+    224
+  ],
+  "input_range": [
+    0,
+    255
+  ],
+  "preprocessing": "RGB decode, bilinear resize with antialias to 224x224, float32; EfficientNetB0 internal rescaling",
+  "class_order": [
+    "Healthy",
+    "Magnesium",
+    "Nitrogen",
+    "Phosphorus",
+    "Potassium"
+  ],
+  "seed": 42,
+  "batch_size": 16,
+  "head_epochs_requested": 20,
+  "fine_tune_epochs_requested": 12,
+  "fine_tune_top_layers": 30,
+  "trainable_base_layers_during_fine_tuning": 23,
+  "augmentation": [
+    "RandomRotation(0.05)",
+    "RandomFlip(horizontal)",
+    "RandomZoom(0.10)",
+    "RandomBrightness(0.12, value_range=[0,255])"
+  ],
+  "early_stopping": {
+    "monitor": "val_loss",
+    "patience": 5,
+    "restore_best_weights": true
+  },
+  "reduce_lr_on_plateau": {
+    "monitor": "val_loss",
+    "factor": 0.2,
+    "patience": 2,
+    "min_lr": 1e-06
+  },
+  "class_weights": {
+    "Healthy": 1.292,
+    "Magnesium": 0.7511627906976744,
+    "Nitrogen": 0.936231884057971,
+    "Phosphorus": 0.8177215189873418,
+    "Potassium": 1.6564102564102565
+  },
+  "train_image_count": 323,
+  "validation_image_count": 71,
+  "completed_epochs": 32,
+  "best_validation_loss": 0.43221455812454224,
+  "test_set_used_during_training": false
+}

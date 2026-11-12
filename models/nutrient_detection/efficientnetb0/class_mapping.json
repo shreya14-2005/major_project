@@ -1,0 +1,17 @@
+{
+  "class_order": [
+    "Healthy",
+    "Magnesium",
+    "Nitrogen",
+    "Phosphorus",
+    "Potassium"
+  ],
+  "folder_to_label": {
+    "Helathy": "Healthy",
+    "Magnessium": "Magnesium",
+    "Nitrogen": "Nitrogen",
+    "Phosphorous": "Phosphorus",
+    "Pottasium": "Potassium"
+  },
+  "label_source_note": "Labels are inherited from the supplied dataset folders and have not been independently scientifically verified."
+}

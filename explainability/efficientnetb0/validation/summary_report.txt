@@ -1,0 +1,37 @@
+EFFICIENTNETB0 EXPLAINABILITY VALIDATION
+=========================================
+Run time: 2026-11-11T23:07:13+05:30
+Model: models\efficientnetb0\model.keras
+Class mapping: models\efficientnetb0\class_mapping.json
+Class order: Blight, Common_Rust, Gray_Leaf_Spot, Healthy
+Model input/output: (None, 224, 224, 3) -> (None, 4)
+Grad-CAM activation tensor (without batch): (7, 7, 1280)
+Preprocessing: EXIF-corrected RGB; 224x224 bilinear; float32 raw [0,255]; EfficientNetB0 internal Rescaling(1/255).
+
+Representative held-out images tested: 7
+Blight: 2 tested; 1 correct; 1 misclassified
+Common_Rust: 2 tested; 1 correct; 1 misclassified
+Gray_Leaf_Spot: 2 tested; 1 correct; 1 misclassified
+Healthy: 1 tested; 1 correct; 0 misclassified
+Correct samples: 4
+Misclassified samples: 3
+Target class policy: the predicted class, matching active inference; both methods must explain that same target.
+
+Validation checks passed: 154
+Validation checks failed: 0
+Global source/model integrity checks passed: 7/7
+Test split integrity: all 628 test image file SHA-256 values compared before and after validation.
+Model SHA-256 before/after: 3c1e1a0e59666c3adc64a0b9a8c062c8c104dd1c6f5a6f4f1341e71b504835b2 / 3c1e1a0e59666c3adc64a0b9a8c062c8c104dd1c6f5a6f4f1341e71b504835b2
+
+Mathematical method checks
+--------------------------
+Grad-CAM: spatially averaged first-order class-score gradients weight the activation maps; ReLU and max normalization are applied.
+Grad-CAM++: a distinct gradient-power alpha weighting is used: alpha = g^2 / max(2*g^2 + sum(A*g^3), 1e-8), then channel weights sum(alpha*ReLU(g)). Each method was compared to a separately calculated NumPy reference from the same activations and gradients.
+Qualification: this is the common gradient-power approximation; it does not explicitly calculate exact second- and third-order derivatives of the softmax class probability. Results validate this implemented approximation, not an exact higher-order derivative implementation.
+Grad-CAM vs Grad-CAM++ normalized-map mean absolute differences: 0.23699594, 0.23612303, 0.10310306, 0.1028478, 0.19129796, 0.25809571, 0.24791948
+
+Results CSV: explainability\efficientnetb0\validation\validation_results.csv
+Per-check CSV: explainability\efficientnetb0\validation\validation_checks.csv
+Visualizations: explainability\efficientnetb0\validation\visualizations
+Failed-case report: not created (no failed checks)
+No model or held-out test image was modified.

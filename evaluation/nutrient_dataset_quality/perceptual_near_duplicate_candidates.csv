@@ -1,0 +1,6 @@
+﻿folder_a,file_a,folder_b,file_b,phash_hamming_distance,phash_similarity_percent,cross_class
+Nitrogen,2 (8).jpeg,Nitrogen,2 (11).jpeg,2,96.88,False
+Pottasium,4 (24).jpeg,Pottasium,4 (27).jpeg,2,96.88,False
+Magnessium,1 (86).jpeg,Magnessium,1 (87).jpeg,6,90.62,False
+Phosphorous,3 (1).jpeg,Phosphorous,3 (14).jpeg,6,90.62,False
+Pottasium,4 (20).jpeg,Pottasium,4 (29).jpeg,6,90.62,False

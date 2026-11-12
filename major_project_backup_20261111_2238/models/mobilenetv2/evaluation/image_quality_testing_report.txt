@@ -1,0 +1,18 @@
+IMAGE QUALITY AND INPUT VALIDATION TEST RESULTS
+===============================================
+Image source for valid/degraded cases: C:\Users\ADMIN\Desktop\major_project\datasets\maize_disease_processed\test
+Blur, brightness, and dimension cases are temporary in-memory transformations of one existing test image; no dataset files were changed.
+Quality limits are configurable heuristics, not medically or scientifically validated rejection criteria.
+
+Passed: 9
+Failed: 0
+
+PASSED: Valid maize test image - decoded RGB, original size=(256, 256), warnings=[]
+PASSED: Blurry image warning - Laplacian variance=1.54
+PASSED: Very dark image warning - mean grayscale=1.82
+PASSED: Very bright image warning - mean grayscale=253.92
+PASSED: Unusual dimensions warning - dimensions=48x36
+PASSED: Unsupported file format - Unsupported image file format: .txt
+PASSED: Corrupted image file - cannot identify image file 'C:\\Users\\ADMIN\\AppData\\Local\\Temp\\planthealthai_image_checks_wv74kpn1\\corrupted.jpg'
+PASSED: Empty input path - Input image path is empty.
+PASSED: Invalid input path - Image file does not exist: C:\Users\ADMIN\AppData\Local\Temp\planthealthai_image_checks_wv74kpn1\missing.jpg

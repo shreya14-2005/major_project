@@ -1,0 +1,6 @@
+﻿image_path_a,label_a,image_path_b,label_b,hamming_distance,cross_class
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (86).jpeg,Magnesium,C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Magnessium\1 (87).jpeg,Magnesium,6,False
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (11).jpeg,Nitrogen,C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Nitrogen\2 (8).jpeg,Nitrogen,2,False
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (1).jpeg,Phosphorus,C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Phosphorous\3 (14).jpeg,Phosphorus,6,False
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (20).jpeg,Potassium,C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (29).jpeg,Potassium,6,False
+C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (24).jpeg,Potassium,C:\Users\ADMIN\Desktop\major_project\datasets\Maize Nutrient Deficiency Dataset\Pottasium\4 (27).jpeg,Potassium,2,False

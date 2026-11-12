@@ -1,0 +1,71 @@
+MAIZE DISEASE MODEL COMPARISON
+==============================
+
+Both models use the same existing 628-image held-out test split and class order.
+EfficientNetB0 checkpoint selection used validation loss only; the test set was
+not used for training, checkpoint selection, or hyperparameter tuning.
+
+Overall test metrics
+--------------------
+Accuracy: EfficientNetB0 0.9618; MobileNetV2 0.9522
+Macro precision: EfficientNetB0 0.9473; MobileNetV2 0.9383
+Macro recall: EfficientNetB0 0.9575; MobileNetV2 0.9429
+Macro F1-score: EfficientNetB0 0.9518; MobileNetV2 0.9405
+Accuracy difference (EfficientNetB0 - MobileNetV2): +0.96 percentage points
+Macro Precision difference (EfficientNetB0 - MobileNetV2): +0.90 percentage points
+Macro Recall difference (EfficientNetB0 - MobileNetV2): +1.46 percentage points
+Macro F1-Score difference (EfficientNetB0 - MobileNetV2): +1.13 percentage points
+
+Per-class test metrics (precision / recall / F1)
+-------------------------------------------------
+Blight: EfficientNetB0 P/R/F1 0.9524/0.9302/0.9412 (n=172); MobileNetV2 0.9294/0.9186/0.9240 (n=172)
+Common_Rust: EfficientNetB0 P/R/F1 0.9948/0.9694/0.9819 (n=196); MobileNetV2 0.9794/0.9694/0.9744 (n=196)
+Gray_Leaf_Spot: EfficientNetB0 P/R/F1 0.8421/0.9302/0.8840 (n=86); MobileNetV2 0.8444/0.8837/0.8636 (n=86)
+Healthy: EfficientNetB0 P/R/F1 1.0000/1.0000/1.0000 (n=174); MobileNetV2 1.0000/1.0000/1.0000 (n=174)
+
+Training, size, inference, and compute
+--------------------------------------
+Training time: EfficientNetB0 3562.65 s (includes pretrained initialization and model save); MobileNetV2 not recorded in its existing report.
+Saved model size: EfficientNetB0 17.07 MB (17065889 bytes, 4,054,695 parameters); MobileNetV2 21.79 MB (21785346 bytes, 2,263,108 parameters).
+Average batch-1 inference latency: EfficientNetB0 57.949 ms/image; MobileNetV2 33.521 ms/image. Timed on the same 32 balanced validation images (8 per class), warmed up, excluding image decode/resize.
+Input: both models use 224x224 RGB images. Both were benchmarked on this TensorFlow CPU runtime; no GPU was available.
+Parameter count, serialized model size, and measured latency are partial computational-cost indicators. Peak memory and FLOPs were not measured.
+
+Gray_Leaf_Spot focus
+--------------------
+EfficientNetB0 Gray_Leaf_Spot recall: 0.9302; MobileNetV2 recall: 0.8837.
+
+Model details
+-------------
+EfficientNetB0 selected phase: frozen EfficientNetB0 base
+EfficientNetB0 best validation loss: 0.169916
+MobileNetV2 metrics and per-class report were read from the unchanged existing report.
+
+MobileNetV2 source classification report
+-----------------------------------------
+precision    recall  f1-score   support
+
+        Blight     0.9294    0.9186    0.9240       172
+   Common_Rust     0.9794    0.9694    0.9744       196
+Gray_Leaf_Spot     0.8444    0.8837    0.8636        86
+       Healthy     1.0000    1.0000    1.0000       174
+
+      accuracy                         0.9522       628
+     macro avg     0.9383    0.9429    0.9405       628
+  weighted avg     0.9529    0.9522    0.9525       628
+
+EfficientNetB0 classification report
+-------------------------------------
+                precision    recall  f1-score   support
+
+        Blight     0.9524    0.9302    0.9412       172
+   Common_Rust     0.9948    0.9694    0.9819       196
+Gray_Leaf_Spot     0.8421    0.9302    0.8840        86
+       Healthy     1.0000    1.0000    1.0000       174
+
+      accuracy                         0.9618       628
+     macro avg     0.9473    0.9575    0.9518       628
+  weighted avg     0.9637    0.9618    0.9624       628
+
+
+No EfficientNetB0 result was estimated or substituted for a measured value.

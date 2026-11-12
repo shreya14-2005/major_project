@@ -1,0 +1,50 @@
+{
+  "model": "EfficientNetB0",
+  "test_image_count": 69,
+  "accuracy": 0.8695652173913043,
+  "macro_precision": 0.8548832866479925,
+  "macro_recall": 0.8413161021984552,
+  "macro_f1": 0.8455513114336645,
+  "per_class": {
+    "Healthy": {
+      "precision": 0.9,
+      "recall": 0.8181818181818182,
+      "f1_score": 0.8571428571428571,
+      "support": 11
+    },
+    "Magnesium": {
+      "precision": 0.9411764705882353,
+      "recall": 0.8888888888888888,
+      "f1_score": 0.9142857142857143,
+      "support": 18
+    },
+    "Nitrogen": {
+      "precision": 0.7777777777777778,
+      "recall": 0.9333333333333333,
+      "f1_score": 0.8484848484848485,
+      "support": 15
+    },
+    "Phosphorus": {
+      "precision": 0.9411764705882353,
+      "recall": 0.9411764705882353,
+      "f1_score": 0.9411764705882353,
+      "support": 17
+    },
+    "Potassium": {
+      "precision": 0.7142857142857143,
+      "recall": 0.625,
+      "f1_score": 0.6666666666666666,
+      "support": 8
+    }
+  },
+  "model_file": "C:\\Users\\ADMIN\\Desktop\\major_project\\models\\nutrient_detection\\efficientnetb0\\best_model.keras",
+  "model_size_bytes": 29017877,
+  "model_size_mb": 27.673604011535645,
+  "parameter_count": 4055976,
+  "batch_1_inference_latency_ms_mean": 306.8960166652687,
+  "batch_1_inference_latency_ms_median": 302.7232000022195,
+  "latency_repeats": 30,
+  "latency_sample_source": "validation split, not test split",
+  "test_set_inference_passes": 1,
+  "labels_are_supplied_dataset_labels_not_scientifically_verified": true
+}

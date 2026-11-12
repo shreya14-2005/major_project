@@ -1,0 +1,47 @@
+MAIZE DISEASE GRAD-CAM ANALYSIS
+===============================
+
+Analysis date: 2026-10-31T23:15:21+05:30
+Saved model: models/maize_disease_model.keras
+The trained model was loaded for inference only; no training or weight updates were performed.
+Test images were read without modification; the test split was unchanged.
+Image preprocessing: EXIF orientation correction, RGB conversion, resize to 224x224, float32 [0, 255], then the model's embedded mobilenetv2_preprocessing Rescaling layer.
+Grad-CAM final Conv2D layer: Conv_1
+Grad-CAM activation tensor: out_relu
+Grad-CAM target score: current model's predicted class probability.
+
+Generated visualizations
+------------------------
+Selected images: 24
+Successful heatmaps: 24
+Failed heatmaps: 0
+Correct examples successfully generated per class:
+  Blight: 1
+  Common_Rust: 1
+  Gray_Leaf_Spot: 1
+  Healthy: 1
+
+Requested misclassification groups
+----------------------------------
+Blight -> Gray_Leaf_Spot: 13 selected from existing CSV (CSV count 13; expected 13), 13 visualizations succeeded
+Gray_Leaf_Spot -> Blight: 7 selected from existing CSV (CSV count 7; expected 7), 7 visualizations succeeded
+
+Comparison with existing misclassification CSV
+------------------------------------------------
+Model predictions differing from CSV: 0
+CSV-listed errors now predicted as actual class: 0
+Prediction confidence differences greater than 0.0001: 0
+All requested examples were explained successfully; no unreadable images or invalid heatmaps were encountered.
+
+Interpretation limits
+---------------------
+Grad-CAM highlights image regions that contributed to the chosen class score. It is an approximate visual explanation, not a disease detector, proof of correctness, or evidence of biological causation.
+A highlighted region does not establish that the predicted class is correct. Misclassified images are shown with both actual and predicted labels for comparison.
+This analysis makes no assumption that the folder label 'Blight' means Northern Leaf Blight.
+
+Saved output folders
+--------------------
+outputs/gradcam/correct_predictions/
+outputs/gradcam/blight_to_gray_leaf_spot/
+outputs/gradcam/gray_leaf_spot_to_blight/
+CSV: outputs/gradcam/gradcam_report.csv

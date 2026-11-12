@@ -1,0 +1,77 @@
+MAIZE DISEASE MODEL COMPARISON
+==============================
+
+Models: EfficientNetB0 and MobileNetV2
+Evaluation: same existing held-out test split, 628 images, same class order.
+Class order: Blight, Common_Rust, Gray_Leaf_Spot, Healthy.
+EfficientNetB0 checkpoint selection used validation loss; test images were not
+used for training, checkpoint selection, or tuning.
+
+Overall test metrics
+--------------------
+Metric              EfficientNetB0   MobileNetV2
+Accuracy                 0.9618          0.9522
+Macro precision          0.9473          0.9383
+Macro recall             0.9575          0.9429
+Macro F1-score           0.9518          0.9405
+
+Per-class test metrics
+----------------------
+Class             Model             Precision   Recall   F1-score   Support
+Blight            EfficientNetB0       0.9524   0.9302     0.9412       172
+Blight            MobileNetV2          0.9294   0.9186     0.9240       172
+Common_Rust       EfficientNetB0       0.9948   0.9694     0.9819       196
+Common_Rust       MobileNetV2          0.9794   0.9694     0.9744       196
+Gray_Leaf_Spot    EfficientNetB0       0.8421   0.9302     0.8840        86
+Gray_Leaf_Spot    MobileNetV2          0.8444   0.8837     0.8636        86
+Healthy           EfficientNetB0       1.0000   1.0000     1.0000       174
+Healthy           MobileNetV2          1.0000   1.0000     1.0000       174
+
+Confusion matrices (rows: actual; columns: predicted)
+------------------------------------------------------
+EfficientNetB0
+                 Blight  Common_Rust  Gray_Leaf_Spot  Healthy
+Blight               160            1              11        0
+Common_Rust            2          190               4        0
+Gray_Leaf_Spot         6            0              80        0
+Healthy                0            0               0      174
+
+MobileNetV2
+                 Blight  Common_Rust  Gray_Leaf_Spot  Healthy
+Blight               158            1              13        0
+Common_Rust            5          190               1        0
+Gray_Leaf_Spot         7            3              76        0
+Healthy                0            0               0      174
+
+Model size and inference time
+-----------------------------
+EfficientNetB0: 17,065,889 bytes (17.07 MB); 4,054,695 parameters.
+MobileNetV2: 21,785,346 bytes (21.79 MB); 2,263,108 parameters.
+Batch-1 inference latency: EfficientNetB0 57.949 ms/image; MobileNetV2
+33.521 ms/image. These existing measurements used the same 32 balanced
+validation images (8 per class), with warm-up excluded and image decoding and
+resizing excluded. They are reported measurements, not new estimates.
+Peak memory and FLOPs were not measured. MobileNetV2 training time is
+unavailable in its existing evaluation report.
+
+Selection
+---------
+The recorded test metrics support EfficientNetB0 as the final classification
+model: it has higher accuracy, macro precision, macro recall, macro F1-score,
+and Gray_Leaf_Spot recall, while its serialized model is smaller. It is slower
+on the recorded batch-1 benchmark, and its Gray_Leaf_Spot precision (0.8421)
+is slightly below MobileNetV2 (0.8444); this class-specific false-positive
+trade-off should remain visible in deployment review. No formal acceptance
+thresholds were supplied, and the reported test set must not be used to tune
+the model or confidence threshold.
+
+Evidence
+--------
+EfficientNetB0 metrics, class results, and confusion matrix:
+models/efficientnetb0/evaluation/test_metrics.json
+MobileNetV2 classification report and confusion matrix:
+models/mobilenetv2/evaluation/test_evaluation_report.txt
+models/mobilenetv2/evaluation/confusion_matrix.csv
+Existing measured latency comparison:
+models/comparison/previous_model_comparison_report.txt
+Model sizes are filesystem sizes of the preserved .keras files.

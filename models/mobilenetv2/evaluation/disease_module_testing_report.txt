@@ -1,0 +1,82 @@
+PLANTHEALTHAI MAIZE DISEASE MODULE TEST REPORT
+==============================================
+Run date: 2026-11-01T22:56:05+05:30
+Model: C:\Users\ADMIN\Desktop\major_project\models\maize_disease_model.keras
+Class mapping: C:\Users\ADMIN\Desktop\major_project\models\maize_disease_classes.json
+Test dataset: C:\Users\ADMIN\Desktop\major_project\datasets\maize_disease_processed\test
+Model weights, original test dataset, and train/validation/test split were not changed. No training or test-set threshold tuning was performed.
+
+Automated pytest checks
+-----------------------
+Passed: 10
+Failed: 0
+Skipped: 0
+Pytest exit code: 0
+
+Dataset prediction checks
+--------------------------
+Image records: 628
+Correct predictions: 598
+Incorrect predictions: 30
+Failed/unreadable inputs: 0
+Needs review at configured threshold: 33
+Observed incorrect predictions marked needs_review: 14
+Observed incorrect predictions at/above threshold: 16
+These are descriptive test-set counts only; the threshold was not selected or validated using this test set.
+Prediction CSV: C:\Users\ADMIN\Desktop\major_project\evaluation\disease_prediction_testing.csv
+
+Existing evaluation reference (not a threshold-calibration set)
+---------------------------------------------------------------
+Reported earlier test accuracy: 95.22%; macro precision: 93.83%; macro recall: 94.29%; macro F1: 94.05%.
+Current per-image predictions are recorded in the CSV; compare those results with evaluation/test_evaluation_report.txt.
+
+Confidence and unsupported-image handling
+------------------------------------------
+Configured confidence threshold: 0.700
+Threshold marked validation-tested: False
+Low-confidence predictions retain the predicted class and confidence and are marked needs_review. The threshold is not scientifically validated.
+OOD/non-maize status: NOT ASSESSED. The confidence threshold is not an OOD detector and the classifier may assign a class to unrelated images.
+Recommended OOD work (not implemented or tested): Current tested rejection is limited to empty paths, missing files, corrupt images, and unsupported extensions. For genuine OOD handling, collect independent labeled in-scope and out-of-scope examples (including other crops and unrelated objects), calibrate an embedding-distance or energy-based detector on a separate validation set, then measure false acceptance/rejection on a held-out external set. Do not enable OOD rejection or describe the model as detecting non-maize until that evaluation has been completed.
+Image-quality checks are heuristic warnings only; they do not prove an input is maize or a disease is present.
+
+EXPLAINABILITY TEST RESULTS
+===========================
+Grad-CAM uses the model's predicted class; this is not evidence that the highlighted region is a valid disease symptom.
+Grad-CAM++ implementation available: yes
+Selected images: 6
+PASS: Blight\Corn_Blight (1007).JPG (Blight -> Blight): Grad-CAM, Grad-CAM++
+PASS: Common_Rust\Corn_Common_Rust (1005).JPG (Common_Rust -> Common_Rust): Grad-CAM, Grad-CAM++
+PASS: Gray_Leaf_Spot\Corn_Gray_Spot (115).JPG (Gray_Leaf_Spot -> Gray_Leaf_Spot): Grad-CAM, Grad-CAM++
+PASS: Healthy\Corn_Health (100).jpg (Healthy -> Healthy): Grad-CAM, Grad-CAM++
+PASS: Blight\Corn_Blight (109).jpg (Blight -> Gray_Leaf_Spot): Grad-CAM, Grad-CAM++
+PASS: Gray_Leaf_Spot\Corn_Gray_Spot (127).JPG (Gray_Leaf_Spot -> Blight): Grad-CAM, Grad-CAM++
+Explanation method checks passed: 12
+Explanation image checks failed: 0
+Interpretation limitation: heatmap generation/appearance does not validate whether the model attends to biologically correct symptoms.
+
+Real-world testing
+------------------
+Real-world images supplied: 3
+Successfully processed: 3
+Rejected/failed: 0
+See evaluation/real_world_testing_report.txt for details.
+
+Image quality and input validation
+----------------------------------
+Checks passed: 9
+Checks failed: 0
+See evaluation/image_quality_testing_report.txt for details.
+
+Overall executed check counts
+------------------------------
+Passed: 31
+Failed: 0
+Skipped: 0
+Pytest checks skipped: 0
+Real-world testing skipped: no
+
+Limitations/errors
+------------------
+No model/prediction workflow error was raised.
+Grad-CAM/Grad-CAM++ can generate visual explanations but cannot establish that highlighted regions are biologically meaningful.
+Run `python -m pytest -q testing/test_disease_module.py` to execute just the automated test suite.
